@@ -2,7 +2,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
 
-
 /*
 	Theory by TEMPLATED
 	templated.co @templatedco
@@ -22,42 +21,66 @@
 
 body {
   background-color: #F5F5F5;
+  
+}
+
+#blob1 {
+  position: absolute;
+  z-index: -1;
+  width: 80vw;
+  height: auto;
+
+  left: -8vw;
+  top: 5%;
+}
+
+#blob2 {
+  position: absolute;
+  z-index: -2;
+  width: 50vw;
+  height: auto;
+  right: -10vw;
+  top: 45%;
 }
 
 #header {
-  width: 83.4vw;
-  height: 50vh;
+  width: 60vw;
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 8.3vw;
+  justify-content: center;
+  margin: 0 20.825vw;
 }
 
 #header h1 {
-  font-size: 3.5vw;
-  color: white;
-  font-weight: 600;
+  font-size: 3.2vw;
+  color: #EBEBEB;
+  font-weight: 500;
+}
+
+#header h1 b {
+  font-weight: 700;
+  color: #EBEBEB;
 }
 
 #header h2 {
-  color: white;
-  font-size: 3.5vw;
-  font-weight: 500;
+  color: #EBEBEB;
+  font-size: 1.9vw;
+  font-weight: 400;
   display: flex;
 }
 
 #header h2 div {
   height: 4.2vw;
   overflow: hidden;
-/*   margin-left: 1vw; */
+  /*   margin-left: 1vw; */
   margin-bottom: 10vh;
-  
 }
 #header h2 ul {
   list-style-type: none;
-  color: #ffe78f;
+  color: #292929;
   position: relative;
   animation: animate 4s linear infinite;
 }
@@ -93,6 +116,10 @@ body {
 } */
 
 #navbar {
+  position: absolute;
+  top: 0;
+  width: inherit;
+
   display: flex;
 
   justify-content: space-between;
@@ -109,7 +136,7 @@ body {
 
 #navbar ul li {
   padding-left: 5%;
-  font-weight: 700;
+  font-weight: 600;
   color: #292929;
 }
 
@@ -156,7 +183,7 @@ body {
   display: flex;
   border-radius: 25px;
   background: white;
-  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 40vh;
   margin-bottom: 5%;
 }
@@ -166,13 +193,13 @@ body {
   padding: 5%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.case-study-left button{
+.case-study-left button {
   background-color: #909090;
   border: none;
   color: white;
@@ -196,13 +223,13 @@ body {
   object-fit: cover;
 }
 
-.product-type{
+.product-type {
   font-size: 1.2em;
   color: #909090;
 }
 
-.product-name{
- font-size: 2em;
+.product-name {
+  font-size: 2em;
   margin: 2% 0 2% 0;
   font-weight: 600;
 }
@@ -212,6 +239,3 @@ body {
   line-height: 1.5em;
   color: #535353;
 }
-
-
-
