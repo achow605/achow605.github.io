@@ -9,6 +9,8 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <!-- Fly-In On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body id="body">
@@ -36,7 +38,7 @@
 
       <div id="intro">
         <h1>Hi, I'm <b>Anthony Chow</b></h1>
-        <h2>I study Human-Computer Interaction<br />at the University of California Davis.</h2>
+        <h2>I study Human-Computer Interaction<br />at the University of California Davis</h2>
       </div>
     </div>
 
@@ -53,7 +55,7 @@
     <div id="content">
       <div id="case-studies">
         <!--         <div class="case-study-container"> -->
-        <div class="case-study">
+        <div class="case-study" data-aos="fade-up">
           <div class="case-study-left">
             <h1 class="product-type">
               Digital Calendar Integration Tool
@@ -75,7 +77,7 @@
             />
           </div>
         </div>
-        <div class="case-study">
+        <div class="case-study" data-aos="fade-up">
           <div class="case-study-left">
             <h1 class="product-type">
               Digital Queuing System
@@ -105,33 +107,42 @@
       © Anthony Chow 2020
     </div>
 
+        <!-- Fly-In on scroll  -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+
+      <script type="text/javascript">
+
+        // Parallax Scrolling
+
+        let blob1 = document.getElementById("blob1");
+        let blob2 = document.getElementById("blob2");
+        let blob3 = document.getElementById("blob3");
+        let intro = document.getElementById("intro");
+
+        window.addEventListener("scroll", function() {
+          var value = window.scrollY;
+
+          blob1.style.top = 45 - value * 0.02 + "%";
+          blob2.style.top = 18 - value * 0.01 + "%";
+          blob3.style.top = 73 - value * 0.05 + "%";
+        });
+
+        // "About" Page Link + Animation
+
+        let about = document.getElementById("about-link");
+        let body = document.getElementById("body");
+
+        about.addEventListener("click", function() {
+          body.className = "leave";
+          setTimeout(500);
+          window.location.href = "about";
+        });
+      </script>
+
   </body>
-
-  <script type="text/javascript">
-    // Parallax Scrolling
-
-    let blob1 = document.getElementById("blob1");
-    let blob2 = document.getElementById("blob2");
-    let blob3 = document.getElementById("blob3");
-    let intro = document.getElementById("intro");
-
-    window.addEventListener("scroll", function() {
-      var value = window.scrollY;
-
-      blob1.style.top = 45 - value * 0.02 + "%";
-      blob2.style.top = 18 - value * 0.01 + "%";
-      blob3.style.top = 73 - value * 0.05 + "%";
-    });
-
-    // About Page Link + Animation
-
-    let about = document.getElementById("about-link");
-    let body = document.getElementById("body");
-
-    about.addEventListener("click", function() {
-      body.className = "leave";
-      setTimeout(500);
-      window.location.href = "about";
-    });
-  </script>
 </html>
