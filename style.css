@@ -345,6 +345,11 @@ a {
 
 }
 
+#case-study-banner img {
+  width: 100%;
+  overflow: hidden;
+}
+
 .leave {
   animation: leave 0.5s ease-in-out;
 }
