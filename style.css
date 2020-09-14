@@ -342,12 +342,12 @@ a {
 #case-study-banner {
   width: 100vw;
   height: 20vh;
+  overflow: hidden;
 
 }
 
 #case-study-banner img {
   width: 100%;
-  overflow: hidden;
 }
 
 .leave {
