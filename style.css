@@ -343,6 +343,7 @@ a {
   width: 100vw;
   height: 20vh;
   overflow: hidden;
+  object-fit: cover;
 
 }
 
