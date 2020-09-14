@@ -344,7 +344,7 @@ a {
   height: 30vh;
   overflow: hidden;
   object-fit: cover;
-
+  animation: flyin 1s ease-in-out;
 }
 
 #case-study-banner img {
