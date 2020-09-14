@@ -308,7 +308,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
   color: #303030;
-  
+
   animation: flyin 1s ease-in-out;
 }
 
@@ -337,6 +337,12 @@ a {
 
 #about-container h1 {
   font-size: 2.5vw;
+}
+
+#case-study-banner {
+  width: 100vw;
+  height: 20vh;
+  
 }
 
 .leave {
