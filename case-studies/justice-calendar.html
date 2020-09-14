@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Anthony Chow • Justice Calendar</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-  </head>
+  <title>Anthony Chow • Justice Calendar</title>
 
-  <body id="body">
-    <div id="header" style="height: 20vh">
-      <div id="navbar">
-        <ul id="links">
-          <li id="projects-link">Projects</li>
-          <li><a href="https://drive.google.com/file/d/11wyCKHSn4AzgQAAF11bMCae3xHqwl-fm/view?usp=sharing" target="_blank">Resume</a></li>
-          <li id="about-link">About Me</li>
-        </ul>
-      </div>
-      <div id="banner">
-      <img src="./assets/justice-calendar-mockup.jpg"</div>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body id="body">
+  <div id="header" style="height: 20vh">
+    <div id="navbar">
+      <ul id="links">
+        <li id="projects-link">Projects</li>
+        <li><a href="https://drive.google.com/file/d/11wyCKHSn4AzgQAAF11bMCae3xHqwl-fm/view?usp=sharing" target="_blank">Resume</a></li>
+        <li id="about-link">About Me</li>
+      </ul>
+    </div>
+    <div id="banner">
+      <img src="./assets/justice-calendar-mockup.jpg" </div>
     </div>
 
     <div id="footer">
       © Anthony Chow 2020
     </div>
-  </body>
+</body>
 
-  <script type="text/javascript">
+<script type="text/javascript">
+  // "Projects" Page Link + Animation
 
-    // "Projects" Page Link + Animation
+  let projects = document.getElementById("projects-link");
+  let body = document.getElementById("body");
 
-    let projects = document.getElementById("projects-link");
-    let body = document.getElementById("body");
+  projects.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "http://achow605.github.io/";
+  });
 
-    projects.addEventListener("click", function() {
-      body.className = "leave";
-      setTimeout(500);
-      window.location.href = "http://achow605.github.io/";
-    });
+  // "About" Page Link + Animation
 
-    // "About" Page Link + Animation
+  let about = document.getElementById("about-link");
+  let body = document.getElementById("body");
 
-    let about = document.getElementById("about-link");
-    let body = document.getElementById("body");
+  about.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "about";
+  });
+</script>
 
-    about.addEventListener("click", function() {
-      body.className = "leave";
-      setTimeout(500);
-      window.location.href = "about";
-    });
-
-  </script>
 </html>
