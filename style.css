@@ -344,6 +344,10 @@ a {
   height: 30vh;
   overflow: hidden;
   object-fit: cover;
+
+  display: flex;
+  align-items: center;
+
   animation: flyin 1s ease-in-out;
 }
 
