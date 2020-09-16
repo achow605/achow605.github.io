@@ -358,13 +358,13 @@ button:hover {
 }
 
 #case-study-body-container {
+  animation: flyin 1s ease-in-out;
   display: flex;
   justify-content: center;
+  margin-top: 10vh;
 }
 
 #case-study-body {
-  animation: flyin 1s ease-in-out;
-  margin-top: 10vh;
   width: 58.35vw;
   display: flex;
   flex-direction: column;
