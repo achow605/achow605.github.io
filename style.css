@@ -272,6 +272,9 @@ a {
   /*   border-radius: 12px; */
 }
 
+button:hover {
+  cursor: pointer;
+}
 .case-study-right {
   width: 60%;
 }
