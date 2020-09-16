@@ -18,10 +18,6 @@ html {
   vertical-align: baseline;
 }
 
-body {
-  /*   background-color: red; */
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -359,6 +355,11 @@ button:hover {
 #case-study-banner img {
   width: 100%;
   object-fit: cover;
+}
+
+#case-study-body-container {
+  display: flex;
+  justify-content: center;
 }
 
 #case-study-body {
