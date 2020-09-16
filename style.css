@@ -361,7 +361,7 @@ button:hover {
   animation: flyin 1.5s ease-in-out;
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   font-family: "Montserrat", sans-serif;
 }
 
