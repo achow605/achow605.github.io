@@ -358,10 +358,11 @@ button:hover {
 }
 
 #case-study-body-container {
-  animation: flyin 1s ease-in-out;
+  animation: flyin 1.5s ease-in-out;
   display: flex;
   justify-content: center;
   margin-top: 10vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 #case-study-body {
@@ -373,7 +374,7 @@ button:hover {
 
 #case-study-body h1 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .leave {
