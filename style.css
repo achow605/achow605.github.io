@@ -362,6 +362,7 @@ button:hover {
 }
 
 #case-study-body {
+  margin-top: 10vh;
   width: inherit;
   display: flex;
   flex-direction: column;
