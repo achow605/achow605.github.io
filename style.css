@@ -417,6 +417,11 @@ button:hover {
   font-weight: 600;
 }
 
+#case-study-body a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 #case-study-body img {
   width: 100%;
   margin-bottom: 5vh;
