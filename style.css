@@ -1,7 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
-
-/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -76,16 +75,16 @@ a {
   flex-direction: column;
   justify-content: center;
   margin: 0 20.825vw;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 #intro {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 #intro h1 {
   font-size: 3.2vw;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #intro h1 b {
@@ -362,19 +361,84 @@ button:hover {
   display: flex;
   justify-content: center;
   margin-top: 5vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #303030;
 }
 
 #case-study-body {
-  width: 58.35vw;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #case-study-body h1 {
   font-weight: 700;
-  font-size: 4.5em;
+  font-size: 3.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+#case-study-body h2 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 5vh;
+}
+
+#case-study-body h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 5vh;
+}
+
+#case-study-body h4 {
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+#case-study-body p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5vh
+}
+
+#case-study-body li {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2vh;
+}
+
+#case-study-body ul {
+  margin-bottom: 3vh;
+}
+
+#case-study-body b {
+  font-weight: 600;
+}
+
+#case-study-body img {
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.hf-body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hf-left {
+  width: 50%;
+}
+
+.hf-left img {
+  width: 80% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hf-right {
+  width: 50%;
 }
 
 .leave {
