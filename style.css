@@ -46,7 +46,6 @@ a {
   width: 90vw;
   height: auto;
   right: -22vw;
-  /*   margin-top: 25vh; */
   top: 18%;
 
   animation: flyin 1.6s ease-in-out;
@@ -124,7 +123,7 @@ a {
 
 #intro {
   animation: flyin 1s ease-in-out;
-  width: 36vw;
+  width: 35vw;
   color: #303030;
 }
 
@@ -451,17 +450,195 @@ button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.tutorqueue b, a {
+.tutorqueue b, .justice-calendar a {
   color: #BC941D;
 }
 
-.justice-calendar b, a {
+.justice-calendar b, .justice-calendar a {
   color: #7B002D;
 }
 
 .leave {
   animation: leave 0.5s ease-in-out;
 }
+
+#nav-icon-container {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  top: 2vh;
+  right: 5vw;
+  position: absolute;
+}
+
+.sidenav {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  #intro h1 {
+    font-size: 3.5vw;
+    }
+  #intro h2 {
+    font-size: 2vw;
+  }
+
+  #case-studies {
+    max-width: 800px;
+  }
+  .product-type {
+    font-size: 1em;
+  }
+  .case-study-left button {
+    width: 60%;
+  }
+  #navbar ul li {
+    font-size: 3vw;
+  }
+  .downArrow {
+    left: 47%;
+  }
+  .downArrow img {
+    width: 6vw !important;
+  }
+}
+
+/* iPad Dimensions */
+
+@media only screen and (max-width: 1100px) {
+  #header {
+    width: 75%;
+    margin: 0 12.5vw;
+  }
+  #navbar {
+    padding: 10% 0;
+  }
+  #intro {
+    width: 40vw;
+  }
+  #intro h1 {
+    font-size: 9vw;
+  }
+  #intro h2 {
+    font-size: 3vw;
+    padding-bottom: 30vh;
+  }
+  #blob1 {
+    width: auto;
+    height: 70vh;
+    left: -50vw;
+    top: 45%;
+    bottom: -40%;
+  }
+  #blob2 {
+    margin-top: 25vh;
+  }
+  #blob3 {
+    width: 120vw;
+    right: -50vw;
+  }
+  .case-studies {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Dimensions */
+
+@media (max-width: 600px) {
+  #blob1 {
+    display: none;
+  }
+  #blob2 {
+    display: none;
+  }
+  #blob3 {
+    display: none;
+  }
+  .downArrow img {
+    filter: invert(1);
+  }
+
+  #header {
+    width: 90%;
+    margin: 0 5vw;
+  }
+  #navbar {
+    display: none;
+  }
+  #intro {
+    width: 90vw;
+  }
+  #intro h1 {
+    font-size: 15vw;
+  }
+  #intro h2 {
+    font-size: 6vw;
+    padding-bottom: 10vh;
+    line-height: 120%;
+  }
+
+  #nav-icon-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sidenav {
+  display: block;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #303030;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 15vh;
+}
+
+#mobile-nav-links {
+    transition: 0.3s;
+}
+
+.sidenav a {
+  padding: 0.5em 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: #F5F5F5;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 6vw;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  #case-studies {
+    width: 100vw;
+  }
+  .case-study {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+  .case-study-left {
+    width: 80%;
+    padding: 10%;
+  }
+  .case-study-right {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 250px;file:///D:/Users/Anthony/Documents/GitHub/achow605.github.io/index.html
+
+  }
+}
+
+
 
 @keyframes leave {
   100% {

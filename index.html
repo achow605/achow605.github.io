@@ -1,150 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <meta name="google-site-verification" content="pyTXo0EcGIfvsLAczoDhsnnOOA_ivPa2PGZ-92zIpOQ" />
-    
-    <title>Anthony Chow • Portfolio</title>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <!-- Fly-In On Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body id="body">
-    <div id="header">
-      <img
-        id="blob1"
-        src="assets/blueblob.svg"
-      />
-      <img
-        id="blob2"
-        src="assets/orangeblob.svg"
-      />
-      <img
-        id="blob3"
-        src="assets/redblob.svg"
-      />
+  <meta name="google-site-verification" content="pyTXo0EcGIfvsLAczoDhsnnOOA_ivPa2PGZ-92zIpOQ" />
 
-      <div id="navbar">
-        <ul id="links">
-          <li><a onclick="document.getElementById('content').scrollIntoView(true)">Projects</a></li>
-          <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
-          <li id="about-link">About Me</li>
-        </ul>
-      </div>
+  <title>Anthony Chow • Portfolio</title>
 
-      <div id="intro">
-        <h1>Hi, I'm <b>Anthony Chow</b></h1>
-        <h2>I study Human-Computer Interaction<br />at the University of California Davis</h2>
-      </div>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fly-In On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body id="body">
+  <div id="header">
+    <img id="blob1" src="assets/blueblob.svg" />
+    <img id="blob2" src="assets/orangeblob.svg" />
+    <img id="blob3" src="assets/redblob.svg" />
+
+    <div id="navbar">
+      <ul id="links">
+        <li><a onclick="document.getElementById('content').scrollIntoView(true)">Projects</a></li>
+        <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
+        <li id="about-link">About Me</li>
+      </ul>
     </div>
 
-    <div class="downArrow bounce">
-      <a href="#case-studies"
-        ><img
-          width="40"
-          height="40"
-          alt=""
-          src="assets/downArrow.svg"
-      /></a>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+
     </div>
 
-    <div id="content">
-      <div id="case-studies">
-        <!--         <div class="case-study-container"> -->
-        <div class="case-study" data-aos="fade-up">
-          <div class="case-study-left">
-            <h1 class="product-type">
-              Digital Calendar Integration Tool
-            </h1>
-            <h2 class="product-name">
-              Justice Calendar
-            </h2>
-            <h3 class="product-desc">
-              Helping commit action and understanding towards racial justice
-            </h3>
-            <button style="background-color: #EC80A4" onclick="window.location.href='case-studies/justice-calendar';">
-              View Case Study
-            </button>
-          </div>
-          <div class="case-study-right">
-            <img
-              class="product-img"
-              src="assets/justice-calender-mockup.jpg"
-            />
-          </div>
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- ###################### -->
+
+    <div id="intro">
+      <h1>Hi, I'm <b>Anthony Chow</b></h1>
+      <h2>I study Human-Computer Interaction at the University of California Davis</h2>
+    </div>
+  </div>
+
+  <div class="downArrow bounce">
+    <a href="#case-studies"><img src="assets/downArrow.svg" style="width: 2vw;" /></a>
+  </div>
+
+  <div id="content">
+    <div id="case-studies">
+      <!--         <div class="case-study-container"> -->
+      <div class="case-study" data-aos="fade-up">
+        <div class="case-study-left">
+          <h1 class="product-type">
+            Digital Calendar Integration Tool
+          </h1>
+          <h2 class="product-name">
+            Justice Calendar
+          </h2>
+          <h3 class="product-desc">
+            Helping commit action and understanding towards racial justice
+          </h3>
+          <button style="background-color: #EC80A4" onclick="window.location.href='case-studies/justice-calendar';">
+            View Case Study
+          </button>
         </div>
-        <div class="case-study" data-aos="fade-up">
-          <div class="case-study-left">
-            <h1 class="product-type">
-              Digital Queuing System
-            </h1>
-            <h2 class="product-name">
-              TutorQueue
-            </h2>
-            <h3 class="product-desc">
-              A reinvented queuing system for the UC Davis Computer Science
-              Tutoring Center
-            </h3>
-            <button style="background-color: #BC941D" onclick="window.location.href='case-studies/tutorqueue';">
-              View Case Study
-            </button>
-          </div>
-          <div class="case-study-right">
-            <img
-              class="product-img"
-              src="assets/tutorqueue-mockup.jpg"
-            />
-          </div>
+        <div class="case-study-right">
+          <img class="product-img" src="assets/justice-calender-mockup.jpg" />
+        </div>
+      </div>
+      <div class="case-study" data-aos="fade-up">
+        <div class="case-study-left">
+          <h1 class="product-type">
+            Digital Queuing System
+          </h1>
+          <h2 class="product-name">
+            TutorQueue
+          </h2>
+          <h3 class="product-desc">
+            A reinvented queuing system for the UC Davis Computer Science
+            Tutoring Center
+          </h3>
+          <button style="background-color: #BC941D" onclick="window.location.href='case-studies/tutorqueue';">
+            View Case Study
+          </button>
+        </div>
+        <div class="case-study-right">
+          <img class="product-img" src="assets/tutorqueue-mockup.jpg" />
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="footer">
-      © Anthony Chow 2020
-    </div>
+  <div id="footer">
+    © Anthony Chow 2020
+  </div>
 
-        <!-- Fly-In on scroll  -->
+  <!-- Fly-In on scroll  -->
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
-      <script type="text/javascript">
+  <script type="text/javascript">
+    // Parallax Scrolling
 
-        // Parallax Scrolling
 
-        let blob1 = document.getElementById("blob1");
-        let blob2 = document.getElementById("blob2");
-        let blob3 = document.getElementById("blob3");
-        let intro = document.getElementById("intro");
 
-        window.addEventListener("scroll", function() {
-          var value = window.scrollY;
+    let blob1 = document.getElementById("blob1");
+    let blob2 = document.getElementById("blob2");
+    let blob3 = document.getElementById("blob3");
+    let intro = document.getElementById("intro");
 
-          blob1.style.top = 45 - value * 0.02 + "%";
-          blob2.style.top = 18 - value * 0.01 + "%";
-          blob3.style.top = 73 - value * 0.05 + "%";
-        });
+    window.addEventListener("scroll", function() {
+      var value = window.scrollY;
 
-        // "About" Page Link + Animation
+      blob1.style.top = 45 - value * 0.02 + "%";
+      blob2.style.top = 18 - value * 0.01 + "%";
+      blob3.style.top = 73 - value * 0.05 + "%";
 
-        let about = document.getElementById("about-link");
-        let body = document.getElementById("body");
+    });
 
-        about.addEventListener("click", function() {
-          body.className = "leave";
-          setTimeout(500);
-          window.location.href = "about";
-        });
-      </script>
+    // "About" Page Link + Animation
 
-  </body>
+    let about = document.getElementById("about-link");
+    let body = document.getElementById("body");
+
+    about.addEventListener("click", function() {
+      body.className = "leave";
+      setTimeout(500);
+      window.location.href = "about";
+    });
+
+
+    // Mobile Navigation Menu
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100vw";
+      setTimeout(10);
+      document.getElementById("mobile-nav-links").style.opacity = "1";
+    }
+
+    function closeNav() {
+      document.getElementById("mobile-nav-links").style.opacity = "0";
+      setTimeout(10);
+      document.getElementById("mySidenav").style.width = "0";
+
+    }
+  </script>
+
+</body>
+
 </html>
