@@ -451,6 +451,14 @@ button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.tutorqueue b, a {
+  color: #BC941D;
+}
+
+.justice-calendar b, a {
+  color: #7B002D;
+}
+
 .leave {
   animation: leave 0.5s ease-in-out;
 }
