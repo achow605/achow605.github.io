@@ -9,11 +9,11 @@
   <title>Anthony Chow • Portfolio</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body id="body">
-  <div id="header" style="height: 20vh">
+  <div id="header" class="about-header" style="height: 20vh">
     <div id="navbar">
       <ul id="links">
         <li id="projects-link">Projects</li>
@@ -21,10 +21,27 @@
         <li>About Me</li>
       </ul>
     </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+
+    </div>
+
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- ###################### -->
   </div>
   <div id="about-container">
     <div id="intro">
-      <h1>Hi, I'm <b>Anthony Chow</b></h1>
+      <h1 id="about-header">Hi, I'm <b>Anthony Chow</b></h1>
       <p>
         I’m a third-year at the University of California, Davis pursuing an
         individual major in Human-Computer Interaction. Currently, I am a
@@ -86,6 +103,21 @@
     setTimeout(500);
     window.location.href = "http://achow605.github.io/";
   });
+
+  // Mobile Navigation Menu
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100vw";
+    setTimeout(10);
+    document.getElementById("mobile-nav-links").style.opacity = "1";
+  }
+
+  function closeNav() {
+    document.getElementById("mobile-nav-links").style.opacity = "0";
+    setTimeout(10);
+    document.getElementById("mySidenav").style.width = "0";
+
+  }
 </script>
 
 </html>
