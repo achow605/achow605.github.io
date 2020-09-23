@@ -602,6 +602,9 @@ button:hover {
     padding-bottom: 10vh;
     line-height: 120%;
   }
+  #blob1, #blob2, #blob3 {
+    display: none;
+  }
 
   #nav-icon-container {
     display: flex;
