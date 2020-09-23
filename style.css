@@ -24,6 +24,10 @@ a {
   transition: color 0.25s linear; /* For modern browsers */
 }
 
+#body-wrapper {
+  overflow-x: hidden;
+}
+
 #links li:hover {
   color: #00B5FF;
   cursor: pointer;
@@ -514,9 +518,6 @@ button:hover {
   #navbar {
     padding: 10% 0;
   }
-  #intro {
-    width: 40vw;
-  }
   #intro h1 {
     font-size: 9vw;
   }
@@ -528,15 +529,15 @@ button:hover {
     width: auto;
     height: 70vh;
     left: -50vw;
-    top: 45%;
-    bottom: -40%;
+    top: 50% !important;
   }
   #blob2 {
-    margin-top: 25vh;
+    top: 45% !important;
   }
   #blob3 {
     width: 120vw;
     right: -50vw;
+    top: 73% !important;
   }
   .case-studies {
     max-width: 90%;
@@ -557,10 +558,10 @@ button:hover {
     z-index: -1;
   }
   #intro {
-    width: 100% !important;
+    width: 80%;
   }
   #intro h1 {
-    margin-top: 10vh;
+    margin-top: 0;
     width: 50%;
   }
 
@@ -579,15 +580,6 @@ button:hover {
 /* Mobile Dimensions */
 
 @media (max-width: 600px) {
-  #blob1 {
-    display: none;
-  }
-  #blob2 {
-    display: none;
-  }
-  #blob3 {
-    display: none;
-  }
   .downArrow img {
     filter: invert(1);
   }
