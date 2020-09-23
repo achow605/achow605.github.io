@@ -601,7 +601,13 @@ button:hover {
     padding-bottom: 10vh;
     line-height: 120%;
   }
-  #blob1, #blob2, #blob3 {
+  #blob1 {
+    display: none;
+  }
+  #blob2 {
+    display: none;
+  }
+  #blob3 {
     display: none;
   }
 
