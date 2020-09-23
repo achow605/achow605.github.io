@@ -18,10 +18,11 @@
 
 <body id="body">
   <div id="header">
-    <img id="blob1" src="assets/blueblob.svg" />
-    <img id="blob2" src="assets/orangeblob.svg" />
-    <img id="blob3" src="assets/redblob.svg" />
-
+    <div id="blobs">
+      <img id="blob1" src="assets/blueblob.svg" />
+      <img id="blob2" src="assets/orangeblob.svg" />
+      <img id="blob3" src="assets/redblob.svg" />
+    </div>
     <div id="navbar">
       <ul id="links">
         <li><a onclick="document.getElementById('content').scrollIntoView(true)">Projects</a></li>
@@ -161,6 +162,16 @@
       document.getElementById("mySidenav").style.width = "0";
 
     }
+
+  // scrolling fix?
+
+  var scrollEventHandler = function()
+  {
+    window.scroll(0, window.pageYOffset)
+  }
+
+  window.addEventListener("scroll", scrollEventHandler, false);
+
   </script>
 
 </body>
