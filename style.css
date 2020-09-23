@@ -305,6 +305,7 @@ button:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
   color: #303030;
+  text-align: center;
 
   animation: flyin 1s ease-in-out;
 }
