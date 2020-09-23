@@ -561,7 +561,10 @@ button:hover {
   #intro h1 {
     margin-top: 10vh;
     width: 50%;
-    font-size: 9vw !important;
+  }
+
+  .about-intro {
+    font-size: 9vw;
   }
 
   #about-header {
