@@ -66,6 +66,14 @@ a {
   animation: flyin 1.8s ease-in-out;
 }
 
+#tabletblobs {
+  display: none;
+}
+
+#mobileblobs {
+  display: none;
+}
+
 .lilblob {
   display: block;
 }
@@ -466,6 +474,13 @@ button:hover {
   animation: leave 0.5s ease-in-out;
 }
 
+@keyframes leave {
+  100% {
+    opacity: 0;
+    /*     transform: translateY(5vh); */
+  }
+}
+
 #nav-icon-container {
   font-size: 30px;
   cursor: pointer;
@@ -525,18 +540,23 @@ button:hover {
     padding-bottom: 30vh;
   }
   #blob1 {
-    width: auto;
-    height: 70vh;
-    left: -50vw;
-    top: 50% !important;
+    display: none;
   }
   #blob2 {
-    top: 45% !important;
+    display: none;
   }
   #blob3 {
-    width: 120vw;
-    right: -50vw;
-    top: 73% !important;
+    display: none;
+  }
+  #tabletblobs {
+    display: block;
+    animation: fadein 1.5s linear;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 0;
+    top: 20%;
+    z-index: -2;
   }
   .case-studies {
     max-width: 90%;
@@ -559,16 +579,20 @@ button:hover {
   #intro {
     width: 80%;
   }
-  #intro h1 {
-    margin-top: 0;
-    width: 50%;
-  }
 
   .about-intro {
     font-size: 9vw;
+    width: 100% !important;
+  }
+
+  .about-intro h1 {
+    width: 50%;
+    font-size: 9vw !important;
+    margin-top: 5vh;
   }
 
   #about-header {
+    padding-top: 5vh;
     margin-bottom: 10vh;
   }
   #intro p {
@@ -579,9 +603,9 @@ button:hover {
 /* Mobile Dimensions */
 
 @media (max-width: 600px) {
-  .downArrow img {
+  /* .downArrow img {
     filter: invert(1);
-  }
+  } */
 
   #header {
     width: 90%;
@@ -591,24 +615,33 @@ button:hover {
     display: none;
   }
   #intro {
-    width: 90vw;
+    width: 80vw !important;
   }
   #intro h1 {
-    font-size: 15vw;
+    font-size: 15vw !important;
+    width: 100%;
   }
   #intro h2 {
     font-size: 6vw;
-    padding-bottom: 10vh;
+    padding-bottom: 15vh;
     line-height: 120%;
   }
-  #blob1 {
+  #intro p {
+    font-size: 16px;
+  }
+  #tabletblobs {
     display: none;
   }
-  #blob2 {
-    display: none;
-  }
-  #blob3 {
-    display: none;
+
+  #mobileblobs {
+    display: block;
+    animation: fadein 1.5s linear;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: -2;
+    left: 0;
+    top: 35%;
   }
 
   #nav-icon-container {
@@ -676,8 +709,9 @@ button:hover {
     position: static;
     width: 100% !important;
     justify-content: center !important;
+
   }
-  #intro h1 {
+  #about-container #intro h1 {
     margin-top: 5vh;
     width: 80%;
   }
@@ -690,16 +724,7 @@ button:hover {
   .about-header {
     height: 10vh !important;
   }
-  #intro p {
+  /* #intro p {
     font-size: 1em;
-  }
-}
-
-
-
-@keyframes leave {
-  100% {
-    opacity: 0;
-    /*     transform: translateY(5vh); */
-  }
+  } */
 }

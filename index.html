@@ -23,6 +23,8 @@
       <img id="blob2" src="assets/orangeblob.svg" />
       <img id="blob3" src="assets/redblob.svg" />
     </div>
+    <img src="./assets/tabletblobs.png" id="tabletblobs">
+    <img src="./assets/mobileblobs.png" id="mobileblobs">
     <div id="navbar">
       <ul id="links">
         <li><a onclick="document.getElementById('content').scrollIntoView(true)">Projects</a></li>
@@ -125,13 +127,16 @@
     let blob3 = document.getElementById("blob3");
     let intro = document.getElementById("intro");
 
+    let tabletblobs = document.getElementById("tabletblobs");
+    let mobileblobs = document.getElementById("mobileblobs");
     window.addEventListener("scroll", function() {
       var value = window.scrollY;
 
       blob1.style.top = 45 - value * 0.02 + "%";
       blob2.style.top = 18 - value * 0.01 + "%";
       blob3.style.top = 73 - value * 0.05 + "%";
-
+      tabletblobs.style.top = 20 - value * 0.02 + "%";
+      mobileblobs.style.top = 35 - value * 0.02 + "%";
     });
 
     // "About" Page Link + Animation
