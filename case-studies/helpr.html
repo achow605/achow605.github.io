@@ -21,6 +21,22 @@
         <li id="about-link">About Me</li>
       </ul>
     </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+
+    </div>
+
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- ###################### -->
   </div>
   <!-- <div id="case-study-banner">
     <img src="../assets/justice-calender-mockup.jpg">
@@ -43,9 +59,9 @@
       </p>
       <h2>Design Process</h2>
       <h3>Research</h3>
-      <p>At the start of the designathon, all participants were given the following prompt to get them started with their projects:
-        <p style="color: #ddaa00">As designers, you have a huge amount of responsibility but also a lot of power in using a human-centered process to explore, test, and polish solutions for problems in the world. <b>Decide on the issue that you as a team want to tackle, do some research to help you gain empathy on the stakeholders involved, and design a screen-based solution that might work!</b></p>
-        Upon brainstorming user pain points and themes to revolve my project around, I decided to focus on volunteer work and local community based resources. To better understand the pain points and empathize with users surrounding this topic, I decided to send out a <b>survey as a Google Form</b>
+      <p>At the start of the designathon, all participants were given the following prompt to get them started with their projects:</p>
+        <p style="color: #ddaa00;" >As designers, you have a huge amount of responsibility but also a lot of power in using a human-centered process to explore, test, and polish solutions for problems in the world. <b>Decide on the issue that you as a team want to tackle, do some research to help you gain empathy on the stakeholders involved, and design a screen-based solution that might work!</b></p>
+        <p>Upon brainstorming user pain points and themes to revolve my project around, I decided to focus on volunteer work and local community based resources. To better understand the pain points and empathize with users surrounding this topic, I decided to send out a <b>survey as a Google Form</b>
       </p>
       <h3>Research Analysis</h3>
       <p>Of the <b>57</b> respondents to our survey, I saw that:</p>
@@ -169,6 +185,21 @@
     setTimeout(500);
     window.location.href = "../about";
   });
+
+  // Mobile Navigation Menu
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100vw";
+    setTimeout(10);
+    document.getElementById("mobile-nav-links").style.opacity = "1";
+  }
+
+  function closeNav() {
+    document.getElementById("mobile-nav-links").style.opacity = "0";
+    setTimeout(10);
+    document.getElementById("mySidenav").style.width = "0";
+
+  }
 </script>
 
 </html>

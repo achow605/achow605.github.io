@@ -21,6 +21,16 @@
         <li id="about-link">About Me</li>
       </ul>
     </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+
+    </div>
   </div>
   <!-- <div id="case-study-banner">
     <img src="../assets/justice-calender-mockup.jpg">
@@ -179,6 +189,21 @@
     setTimeout(500);
     window.location.href = "../about";
   });
+
+  // Mobile Navigation Menu
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100vw";
+    setTimeout(10);
+    document.getElementById("mobile-nav-links").style.opacity = "1";
+  }
+
+  function closeNav() {
+    document.getElementById("mobile-nav-links").style.opacity = "0";
+    setTimeout(10);
+    document.getElementById("mySidenav").style.width = "0";
+
+  }
 </script>
 
 </html>

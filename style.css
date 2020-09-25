@@ -731,4 +731,32 @@ button:hover {
   /* #intro p {
     font-size: 1em;
   } */
+
+  /* CASE STUDY PAGES */
+  #case-study-body-container {
+    width: 100%;
+  }
+  #case-study-body {
+    width: 90%;
+  }
+  #case-study-body ul {
+    width: 80%;
+    margin: 0 auto 3vh auto;
+  }
+  .hf-body {
+    flex-direction: column-reverse;
+  }
+  .hf-left {
+    width: 90%;
+    margin-left: 15vw;
+  }
+  .hf-right {
+    width: 100%;
+  }
+  pre {
+    display: none;
+  }
+  #case-study-body h1 {
+    margin: 0 auto;
+  }
 }
