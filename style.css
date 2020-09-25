@@ -474,6 +474,10 @@ button:hover {
   color: #7B002D;
 }
 
+.helpr b, .helpr a {
+  color: #ddaa00;
+}
+
 .leave {
   animation: leave 0.5s ease-in-out;
 }
