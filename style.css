@@ -413,6 +413,7 @@ button:hover {
 
 #case-study-body p {
   font-family: "Montserrat", sans-serif;
+  line-height: 150%;
   margin-bottom: 5vh
 }
 
