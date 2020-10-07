@@ -140,7 +140,7 @@ a {
 }
 
 #intro p {
-  font-size: 0.888em;
+  /* font-size: 0.888em; */
   line-height: 1.5em;
   margin: 2vh 0;
 }
