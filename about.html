@@ -54,7 +54,8 @@
         and First-Year Seminars at UC Davis where I created graphics, flyers,
         handbooks, and other digital content.
 
-        <br /><br />Outisde my academic and professional life, I love to take <a href="https://www.instagram.com/acflicks/" target="_blank">portrait photos</a>, <a href="https://www.youtube.com/channel/UCrCMv5AElfQ9MWbOfckG-dw" target="_blank">make videos</a>, play video games, and listen to music!
+        <br /><br />Outisde my academic and professional life, I love to take <a href="https://www.instagram.com/acflicks/" target="_blank">portrait photos</a>, <a href="https://www.youtube.com/channel/UCrCMv5AElfQ9MWbOfckG-dw" target="_blank">make
+          videos</a>, play video games, and listen to music!
 
         <br /><br />I am passionate about using human-centered design as a
         form of problem solving and digital story-telling. My journey started
@@ -81,11 +82,12 @@
         Let's Connect!
       </h1>
       <p>
-        Let's chat over (virtual) coffee by reaching me at <a href="mailto:&#097;&#110;&#116;&#099;&#104;&#111;&#119;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" target="_blank">antchow@ucdavis.edu</a> or my <a href="https://www.linkedin.com/in/anthony-chow/" target="_blank">LinkedIn</a>!
+        Let's chat over (virtual) coffee by reaching me at <a href="mailto:&#097;&#110;&#116;&#099;&#104;&#111;&#119;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" target="_blank">my email</a> or my <a
+          href="https://www.linkedin.com/in/anthony-chow/" target="_blank">LinkedIn</a>!
       </p>
     </div>
     <div id="portrait">
-      <img src="assets/portrait.png">
+      <img src="assets/portrait.png" alt="Picture of me">
     </div>
   </div>
 
@@ -93,34 +95,35 @@
     Coded with ♥ by <br><br>
     © Anthony Chow 2020
   </div>
+  <script type="text/javascript">
+    // About Page Link + Animation
+
+    let projects = document.getElementById("projects-link");
+    let body = document.getElementById("body");
+
+    projects.addEventListener("click", function() {
+      body.className = "leave";
+      setTimeout(500);
+      window.location.href = "http://achow605.github.io/";
+    });
+
+    // Mobile Navigation Menu
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100vw";
+      setTimeout(10);
+      document.getElementById("mobile-nav-links").style.opacity = "1";
+    }
+
+    function closeNav() {
+      document.getElementById("mobile-nav-links").style.opacity = "0";
+      setTimeout(10);
+      document.getElementById("mySidenav").style.width = "0";
+
+    }
+  </script>
 </body>
 
-<script type="text/javascript">
-  // About Page Link + Animation
 
-  let projects = document.getElementById("projects-link");
-  let body = document.getElementById("body");
-
-  projects.addEventListener("click", function() {
-    body.className = "leave";
-    setTimeout(500);
-    window.location.href = "http://achow605.github.io/";
-  });
-
-  // Mobile Navigation Menu
-
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100vw";
-    setTimeout(10);
-    document.getElementById("mobile-nav-links").style.opacity = "1";
-  }
-
-  function closeNav() {
-    document.getElementById("mobile-nav-links").style.opacity = "0";
-    setTimeout(10);
-    document.getElementById("mySidenav").style.width = "0";
-
-  }
-</script>
 
 </html>
