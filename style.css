@@ -752,11 +752,11 @@ button:hover {
     flex-direction: column-reverse;
   }
   .hf-left {
-    width: 90%;
+    width: 90% !important;
     margin-left: 15vw;
   }
   .hf-right {
-    width: 100%;
+    width: 100% !important;
   }
   pre {
     display: none;
