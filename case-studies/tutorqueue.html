@@ -6,187 +6,253 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Anthony Chow • Justice Calendar</title>
+  <title>Anthony Chow • TutorQueue</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style2.min.css" />
 </head>
 
 <body id="body">
-  <div id="header" style="height: 20vh">
-    <div id="navbar">
+  <nav>
+    <div id="nav-container">
+      <h1 id="logo-link">Anthony Chow</h1>
       <ul id="links">
         <li id="projects-link">Projects</li>
         <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
         <li id="about-link">About Me</li>
       </ul>
+
+      <!-- Mobile Navigation Menu -->
+      <div id=mobile-links>
+        <div id="mySidenav" class="sidenav">
+          <div id="mobile-nav-links">
+            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="closeNav(); window.location.href = 'https://achow605.github.io/';">Projects</a>
+            <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+            <a onclick="closeNav(); window.location.href = '../about';">About Me</a>
+          </div>
+        </div>
+
+        <div id="nav-icon-container">
+          <h1>Anthony Chow</h1>
+          <span onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
     </div>
-    <!-- Mobile Navigation Menu -->
-    <div id="mySidenav" class="sidenav">
-      <div id="mobile-nav-links">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
-        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
-        <a href="about">About Me</a>
-      </div>
+  </nav>
 
+  <header id="case-study-header" class="fadein">
+    <h1>TutorQueue</h1>
+    <ul class="proj-overview">
+      <li>UX Design</li>
+      <li>Adobe XD</li>
+      <li>Team of 4</li>
+      <li>10 Weeks</li>
+    </ul>
+    <img src="../assets/tutorqueue-mockup.jpg" alt="TutorQueue Mockup">
+  </header>
+
+  <main class="case-study-body fadein" id="tutorqueue">
+
+    <h2 style="margin-top: 0.5em;">Overview</h2>
+    <p>TutorQueue is a web application that provides a <b>digital queueing system for students and tutors in the UC Davis Computer Science tutoring center</b>.
+      <br><br>
+      This was the culminating project for my Human-Computer Interaction course which was also my first exposure to the idea of user experience and the design process. This was also an introduction to user research and prototyping for me.
+    </p>
+
+    <div class="prob-sol">
+      <section>
+        <h2>The Challenge</h2>
+        <p>Computer Science courses are often project-oriented and many students come to the
+          tutoring center to seek help. The current queuing system that exists at this tutoring center is a whiteboard where students write their name and wait for a tutor to find them.</p>
+      </section>
+      <section>
+        <h2>The Solution</h2>
+        <p>My team and I wanted to create a more <b>efficient way of ensuring that students get the help they needed in a timely manner</b>. Using the design thinking process as a guideline for our project , we designed a digital queuing system,
+          TutorQueue, that matches tutees to the corresponding tutors in an
+          organized manner.</p>
+      </section>
     </div>
-  </div>
-  <!-- <div id="case-study-banner">
-    <img src="../assets/justice-calender-mockup.jpg">
-  </div> -->
-  <div id="case-study-body-container">
-    <div id="case-study-body" class="tutorqueue">
-      <h1>TutorQueue</h1>
-      <p>
-      <pre style="margin: 0 auto 5vh auto;">User Experience Design      |      Adobe XD      |      Team of 4      |      10 Weeks</pre>
-      </p>
-      <img src="../assets/tutorqueue-mockup.jpg" alt="TutorQueue Mockup">
-      <h2>Overview</h2>
-      <p>TutorQueue is a web application that provides a <b>digital queueing system for students and tutors in the UC Davis Computer Science tutoring center</b>. Computer Science courses are often project-oriented and many students come to the
-        tutoring center to seek help. The current queuing system that exists at this tutoring center is a whiteboard where students write their name and wait for a tutor to find them. My team and I wanted to create a more <b>efficient way of ensuring
-          that students get the help they needed in a timely manner</b>. Using the design thinking process as a guideline for our project , we designed a digital queuing system, TutorQueue, that matches tutees to the corresponding tutors in an
-        organized manner.
-        <br><br>
-        This was the culminating project for my Human-Computer Interaction course which was also my first exposure to the idea of user experience and the design process. This was also an introduction to user research and prototyping for me.
-      </p>
-      <h2>Contributors</h2>
-      <img src="../assets/tq-team.png" alt="TutorQueue Team">
-      <h2>Design Process</h2>
-      <img src="../assets/designprocess.png" alt="Stanford Design Process Diagram">
-      <p>For this project, we followed the <b>Stanford Design Process</b> which followed the non-linear steps of <b>Empathizing, Defining, Ideating, Prototyping, and Testing.</b></p>
-      <h3>Empathize</h3>
-      <img src="../assets/tq-recordings.JPG" alt="Screenshot of Voice Memos from Interviews" style="width: 50%; margin-left: auto; margin-right: auto;">
-      <p>Our whole group was composed of students that have taken computer science courses before so we were all familiar with the current system that the tutoring center had in place.
-        We also <b>conducted interviews with both tutors and tutees</b> at the center to get a better understanding of how each of them interact with the current system and how they feel about it.
-      </p>
-      <h4>Context</h4>
-      <img src="../assets/tq-oldq.JPG" alt="Original Queuing System">
-      <p>Above is the original queuing system in place at the CSIF (Computer Science Tutoring Center)</p>
-      <h4>Research Synthesis</h4>
-      <p>
-        What we discovered was that tutors and tutees reported a <b>lack of organization and protocol with the white board queuing system</b>, and that many people didn’t even use the queuing system as they would just approach tutors directly. Tutors
-        are often left <b>flustered and disorganized</b> with who to help next, and tutees are left unhelped or ignored. Tutors admitted that they’ve forgotten to erase their own names on the board and choose tutees at random when they don’t know who
-        is next. Overall, this manual queuing system in place was seen to be <b>prone to misuse and frustration for both tutors and tutees</b>.
-      </p>
-      <h3>Define</h3>
-      <img src="../assets/tq-personas.jpg" alt="User Personas" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-      <p>From the observations and data we collected, we transitioned from empathizing with users to <b>defining the problem statement</b>. To help us organize what we’ve collected so far, we made a <b>persona for the tutor and tutee</b> users first
-        to better direct pain points. From this, we addressed the overall problem:
-      </p>
-      <p><b>How might we replace the existing queueing system by implementing a protocol so more students can receive the help they need from tutors in a timely manner?</b></p>
-      <p>
-        This would be the problem that TutorQueue tackles head on.
-      </p>
-      <h3>Ideate</h3>
-      <p>In brainstorming solutions for our prototype, we wanted to create an organized system where there is both <b>accountability and order</b> so that there would be no confusion as to who is next or who is supposed to be tutoring who at a
-        certain time. At the same time, we wanted to ensure that this system would be <b>intuitive and easy for tutees to check-in and receive help</b>. We decided that a digital implementation via a dedicated computer at the center would preserve
-        the integrity of the queue, and it being the sole device in which students would check in and out would minimize confusion and conflict in adding one’s self to the queue. </p>
-      <h3>Prototype (Low-Fidelity)</h3>
-      <img src="../assets/tq-lofi.png" alt="Low Fidelity Prototype">
-      <p>We created our first low-fidelity prototype using <b>digital sketches</b> on my iPad device, sketching each screen that we would have users interact with and see. We made <b>sketches of common interactions</b> that users would have with the
-        web application including checking in for the first time, changing or removing themselves from the queue, and tutors interacting with the queue to know who to help. </p>
-      <h3>Test</h3>
-      <div class="hf-body">
-        <div style="width: 50%;">
-          <img src="../assets/tq-test1.gif" alt="User Testing 1">
-        </div>
-        <div style="width: 50%;">
-          <img src="../assets/tq-test2.gif" alt="User Testing 2">
-        </div>
-      </div>
-      <p>After making our first prototype, we performed <b>user testing</b> with two Computer Science students. We tested by <b>simulating interface interactions</b> with manual screen changes performed by our team based on what users would “press”
-        on the screen. We asked them to perform the set of common tasks without any suggestions and evaluated their decisions by asking them to <b>“think out loud”</b> when navigating the interface.</p>
-      <h4>Revised Low-Fidelity Prototype</h4>
-      <img src="../assets/tq-midfi.jpg" alt="Revised Low-Fidelity Prototype">
-      <p>From the first round of testing, we <b>discovered some systematic flaws</b> in our organization of the queue, so we created a <b>second draft of our low-fidelity prototype</b> to reflect those fixes for the second round of testing. </p>
-      <h3>Prototype (High-Fidelity)</h3>
-      <div class="hf-body">
-        <div style="width: 47.5%; margin-right: 2.5%;">
-          <b>Joining Queue as Tutee</b>
-          <img src="../assets/tq-hf1.gif" alt="Joining Queue as Tutee" class="tq-hf">
-        </div>
-        <div style="width: 47.5%; margin-left: 2.5%;">
-          <b>Editing Queue as Tutee</b>
-          <img src="../assets/tq-hf2.gif" alt="Editing Queue as Tutee" class="tq-hf">
-        </div>
-      </div>
-      <div class="hf-body">
-        <div style="width: 47.5%; margin-right: 2.5%;">
-          <b>Leaving Queue as Tutee</b>
-          <img src="../assets/tq-hf3.gif" alt="Leaving Queue as Tutee" class="tq-hf">
-        </div>
-        <div style="width: 47.5%; margin-left: 2.5%;">
-          <b>Editing Queue as Tutor</b>
-          <img src="../assets/tq-hf4.gif" alt="Editing Queue as Tutor" class="tq-hf">
-        </div>
-      </div>
-      <div class="hf-body">
-        <div style="width: 47.5%; margin-right: 2.5%;">
-          <b>Daily Timeline View</b>
-          <img src="../assets/tq-hf5.png" alt="Daily Timeline View" class="tq-hf">
-        </div>
-        <div style="width: 47.5%; margin-left: 2.5%;">
-          <b>Grand Queue Display</b>
-          <img src="../assets/tq-hf6.png" alt="Grand Queue Display" class="tq-hf">
-        </div>
-      </div>
 
-      <p>We then turned to Adobe XD to create our high fidelity prototype of TutorQueue. Unfortunately we did not have the time to perform user testing following this stage, but we finally composed a final report of our project which can be accessed
-        <a href="https://drive.google.com/file/d/1zz1twNgqsw8tP4tFDvcmg52ojrPIk4Cq/view?usp=sharing" target="_blank">here</a>. </p>
-      <h2>Challenges</h2>
-      <p>This Human-Computer Interaction course was offered mainly to Computer Science students so this was my group’s<b> first experience working through the design process and user-oriented design</b>. Nonetheless, this project was the perfect
-        introduction to learning this type of thinking and perspective as our project had real world applications to it.</p>
-      <h2>Reflection</h2>
-      <p>This course set the <b>foundation for design thinking</b> for me and showed me that <b>design is so much more than just aesthetic</b>. This course introduced me to the idea of design being used as a form of <b>problem solving and creating a
-          desired experience</b> for a user that is more than just “good”. Although the project group and I have since gone our separate ways, this is a project that I hope to revisit as this can be something that can be definitely implemented in our
-        Computer Science tutoring center.</p>
+    <h3>Prototype Overview</h3>
+    <div class="hf-body row-reverse">
+      <div class="hf-text">
+        <h4>Find help as a tutee</h4>
+        <p> Students looking for tutoring can easily check in and find courses currently available for tutoring. You can easily see who exacly is tutoring and set preferences. Once you check in, you're automatically placed in queue.</p>
+      </div>
+      <div class="hf-img">
+        <img src="../assets/tq-hf1.gif" alt="Joining Queue as Tutee" class="dropshadow">
+      </div>
     </div>
-  </div>
+
+    <div class="hf-body row-reverse">
+      <div class="hf-text">
+        <h4>Give help as a tutor</h4>
+        <p>Tutors get a separate interface where they can see who they need to tutor next without having to worry about who join the queue first.</p>
+      </div>
+      <div class="hf-img">
+        <img src="../assets/tq-hf4.gif" alt="Editing Queue as Tutor" class="dropshadow">
+      </div>
+    </div>
+
+    <h2>Contributors</h2>
+    <img src="../assets/tq-team.jpg" alt="TutorQueue Team">
+
+    <h2>Design Process</h2>
+    <img src="../assets/designprocess.png" alt="Stanford Design Process Diagram">
+    <p>For this project, we followed the <b>Stanford Design Process</b> which followed the non-linear steps of <b>Empathizing, Defining, Ideating, Prototyping, and Testing.</b></p>
+
+    <h3>Empathize</h3>
+    <img src="../assets/tq-recordings.JPG" alt="Screenshot of Voice Memos from Interviews" class="img-small dropshadow">
+    <p>Our whole group was composed of students that have taken computer science courses before so we were all familiar with the current system that the tutoring center had in place.
+      We also <b>conducted interviews with both tutors and tutees</b> at the center to get a better understanding of how each of them interact with the current system and how they feel about it.
+    </p>
+
+    <h4>Context</h4>
+    <img src="../assets/tq-oldq.JPG" alt="Original Queuing System" class="dropshadow">
+    <p>Above is the original queuing system in place at the CSIF (Computer Science Tutoring Center)</p>
+    <h4>Research Synthesis</h4>
+    <p>
+      What we discovered was that tutors and tutees reported a <b>lack of organization and protocol with the white board queuing system</b>, and that many people didn’t even use the queuing system as they would just approach tutors directly. Tutors
+      are often left <b>flustered and disorganized</b> with who to help next, and tutees are left unhelped or ignored. Tutors admitted that they’ve forgotten to erase their own names on the board and choose tutees at random when they don’t know who
+      is next. Overall, this manual queuing system in place was seen to be <b>prone to misuse and frustration for both tutors and tutees</b>.
+    </p>
+    <h3>Define</h3>
+    <img src="../assets/tq-personas.jpg" alt="User Personas" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <p>From the observations and data we collected, we transitioned from empathizing with users to <b>defining the problem statement</b>. To help us organize what we’ve collected so far, we made a <b>persona for the tutor and tutee</b> users first
+      to better direct pain points. From this, we addressed the overall problem:
+    </p>
+    <p><b>How might we replace the existing queueing system by implementing a protocol so more students can receive the help they need from tutors in a timely manner?</b></p>
+    <p>
+      This would be the problem that TutorQueue tackles head on.
+    </p>
+    <h3>Ideate</h3>
+    <p>In brainstorming solutions for our prototype, we wanted to create an organized system where there is both <b>accountability and order</b> so that there would be no confusion as to who is next or who is supposed to be tutoring who at a
+      certain time. At the same time, we wanted to ensure that this system would be <b>intuitive and easy for tutees to check-in and receive help</b>. We decided that a digital implementation via a dedicated computer at the center would preserve
+      the integrity of the queue, and it being the sole device in which students would check in and out would minimize confusion and conflict in adding one’s self to the queue. </p>
+    <h3>Prototype (Low-Fidelity)</h3>
+    <img src="../assets/tq-lofi.png" alt="Low Fidelity Prototype">
+    <p>We created our first low-fidelity prototype using <b>digital sketches</b> on my iPad device, sketching each screen that we would have users interact with and see. We made <b>sketches of common interactions</b> that users would have with the
+      web application including checking in for the first time, changing or removing themselves from the queue, and tutors interacting with the queue to know who to help. </p>
+    <h3>Test</h3>
+    <div class="hf-body">
+      <div style="flex: 1">
+        <img src="../assets/tq-test1.gif" alt="User Testing 1">
+      </div>
+      <div style="flex: 1">
+        <img src="../assets/tq-test2.gif" alt="User Testing 2">
+      </div>
+    </div>
+    <p>After making our first prototype, we performed <b>user testing</b> with two Computer Science students. We tested by <b>simulating interface interactions</b> with manual screen changes performed by our team based on what users would “press”
+      on the screen. We asked them to perform the set of common tasks without any suggestions and evaluated their decisions by asking them to <b>“think out loud”</b> when navigating the interface.</p>
+    <h4>Revised Low-Fidelity Prototype</h4>
+    <img src="../assets/tq-midfi.jpg" alt="Revised Low-Fidelity Prototype">
+    <p>From the first round of testing, we <b>discovered some systematic flaws</b> in our organization of the queue, so we created a <b>second draft of our low-fidelity prototype</b> to reflect those fixes for the second round of testing. </p>
+    <h3>Prototype (High-Fidelity)</h3>
+    <div class="hf-body">
+      <div class="hf-img tq-hf">
+        <b>Joining Queue as Tutee</b>
+        <img src="../assets/tq-hf1.gif" alt="Joining Queue as Tutee" class="dropshadow">
+      </div>
+      <div class="hf-img">
+        <b>Editing Queue as Tutee</b>
+        <img src="../assets/tq-hf2.gif" alt="Editing Queue as Tutee" class="dropshadow">
+      </div>
+    </div>
+    <div class="hf-body">
+      <div class="hf-img tq-hf">
+        <b>Leaving Queue as Tutee</b>
+        <img src="../assets/tq-hf3.gif" alt="Leaving Queue as Tutee" class="dropshadow">
+      </div>
+      <div class="hf-img">
+        <b>Editing Queue as Tutor</b>
+        <img src="../assets/tq-hf4.gif" alt="Editing Queue as Tutor" class="dropshadow">
+      </div>
+    </div>
+    <div class="hf-body">
+      <div class="hf-img  tq-hf">
+        <b>Daily Timeline View</b>
+        <img src="../assets/tq-hf5.png" alt="Daily Timeline View" class="dropshadow">
+      </div>
+      <div class="hf-img">
+        <b>Grand Queue Display</b>
+        <img src="../assets/tq-hf6.png" alt="Grand Queue Display" class="dropshadow">
+      </div>
+    </div>
+
+    <p>We then turned to Adobe XD to create our high fidelity prototype of TutorQueue. Unfortunately we did not have the time to perform user testing following this stage, but we finally composed a final report of our project which can be accessed
+      <a href="https://drive.google.com/file/d/1zz1twNgqsw8tP4tFDvcmg52ojrPIk4Cq/view?usp=sharing" target="_blank">here</a>.
+    </p>
+    <h2>Challenges</h2>
+    <p>This Human-Computer Interaction course was offered mainly to Computer Science students so this was my group’s<b> first experience working through the design process and user-oriented design</b>. Nonetheless, this project was the perfect
+      introduction to learning this type of thinking and perspective as our project had real world applications to it.</p>
+    <h2>Reflection</h2>
+    <p>This course set the <b>foundation for design thinking</b> for me and showed me that <b>design is so much more than just aesthetic</b>. This course introduced me to the idea of design being used as a form of <b>problem solving and creating a
+        desired experience</b> for a user that is more than just “good”. Although the project group and I have since gone our separate ways, this is a project that I hope to revisit as this can be something that can be definitely implemented in our
+      Computer Science tutoring center.</p>
+  </main>
 
 
 
-  <div id="footer">
+  <footer>
     Coded with ♥ by <br><br>
     © Anthony Chow 2020
-  </div>
+  </footer>
+
+  <script type="text/javascript">
+    // Logo and "Projects" Page Link + Animation
+
+    let logo = document.getElementById("logo-link");
+    let projects = document.getElementById("projects-link");
+    let body = document.getElementById("body");
+
+    logo.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "https://achow605.github.io/"
+    });
+
+    projects.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "https://achow605.github.io/";
+    });
+
+    // "About" Page Link + Animation
+
+    let about = document.getElementById("about-link");
+
+    about.addEventListener("click", function() {
+      body.className = "leave";
+      setTimeout(500);
+      window.location.href = "../about";
+    });
+    // Mobile Navigation Menu
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100vw";
+      setTimeout(10);
+      document.getElementById("mobile-nav-links").style.opacity = "1";
+    }
+
+    function closeNav() {
+      document.getElementById("mobile-nav-links").style.opacity = "0";
+      setTimeout(10);
+      document.getElementById("mySidenav").style.width = "0";
+
+    }
+
+    // Navigation Bar on Scroll
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 20) {
+        document.getElementById("nav-container").classList.add("small-nav");
+      } else {
+        document.getElementById("nav-container").classList.remove("small-nav");
+      }
+
+    })
+  </script>
 </body>
-
-<script type="text/javascript">
-  // "Projects" Page Link + Animation
-
-  let projects = document.getElementById("projects-link");
-  let body = document.getElementById("body");
-
-  projects.addEventListener("click", function() {
-    body.className = "leave";
-    setTimeout(500);
-    window.location.href = "http://achow605.github.io/";
-  });
-
-  // "About" Page Link + Animation
-
-  let about = document.getElementById("about-link");
-
-  about.addEventListener("click", function() {
-    body.className = "leave";
-    setTimeout(500);
-    window.location.href = "../about";
-  });
-  // Mobile Navigation Menu
-
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100vw";
-    setTimeout(10);
-    document.getElementById("mobile-nav-links").style.opacity = "1";
-  }
-
-  function closeNav() {
-    document.getElementById("mobile-nav-links").style.opacity = "0";
-    setTimeout(10);
-    document.getElementById("mySidenav").style.width = "0";
-
-  }
-</script>
 
 </html>

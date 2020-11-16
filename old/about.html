@@ -9,44 +9,39 @@
   <title>Anthony Chow • Portfolio</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="style.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <nav>
-    <div id="nav-container">
-      <h1 id="logo-link">Anthony Chow</h1>
+<body id="body">
+  <div id="header" class="about-header" style="height: 20vh">
+    <nav id="navbar">
       <ul id="links">
         <li id="projects-link">Projects</li>
         <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
-        <li id="about-link">About Me</li>
+        <li>About Me</li>
       </ul>
+    </nav>
 
-      <!-- Mobile Navigation Menu -->
-      <div id=mobile-links>
-        <div id="mySidenav" class="sidenav">
-          <div id="mobile-nav-links">
-            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-            <a onclick="closeNav(); window.location.href = 'https://achow605.github.io/';">Projects</a>
-            <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
-            <a onclick="closeNav(); document.getElementById('about-container').scrollIntoView(true);">About Me</a>
-          </div>
-        </div>
-
-        <div id="nav-icon-container">
-          <h1>Anthony Chow</h1>
-          <span onclick="openNav()">&#9776;</span>
-        </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); body.className='leave'; setTimeout(500); window.location.href='http://achow605.github.io/'">Projects</a>
+        <a href=" https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
       </div>
-    </div>
-  </nav>
 
-  <main id="about-container" class="fadein">
-    <div id="portrait">
-      <img src="assets/me.jpg" alt="Picture of me" class="neumorphism">
     </div>
-    <div id="intro">
-      <h1>Hi, I'm <b>Anthony Chow</b></h1>
+
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- ###################### -->
+  </div>
+  <div id="about-container">
+    <div id="intro" class="about-intro">
+      <h1 id="about-header">Hi, I'm <b>Anthony Chow</b></h1>
       <p>
         I’m a third-year at the University of California, Davis pursuing an
         individual major in Human-Computer Interaction. Currently, I am a
@@ -59,8 +54,8 @@
         and First-Year Seminars at UC Davis where I created graphics, flyers,
         handbooks, and other digital content.
 
-        <br /><br />Outisde my academic and professional life, I love to take
-        <a href="https://www.instagram.com/acflicks/" target="_blank">portrait photos</a>, <a href="https://www.youtube.com/channel/UCrCMv5AElfQ9MWbOfckG-dw" target="_blank">make videos</a>, go hiking, and play badminton!
+        <br /><br />Outisde my academic and professional life, I love to take <a href="https://www.instagram.com/acflicks/" target="_blank">portrait photos</a>, <a href="https://www.youtube.com/channel/UCrCMv5AElfQ9MWbOfckG-dw" target="_blank">make
+          videos</a>, play video games, and listen to music!
 
         <br /><br />I am passionate about using human-centered design as a
         form of problem solving and digital story-telling. My journey started
@@ -83,7 +78,7 @@
         representing underserved and underrepresented communities as they
         continue to empower and strengthen me both in and out of academia.
       </p>
-      <h1>
+      <h1 style="font-size: 1.5vw">
         Let's Connect!
       </h1>
       <p>
@@ -91,40 +86,25 @@
           href="https://www.linkedin.com/in/anthony-chow/" target="_blank">LinkedIn</a>!
       </p>
     </div>
-  </main>
+    <div id="portrait">
+      <img src="assets/portrait.png" alt="Picture of me">
+    </div>
+  </div>
 
-
-  <footer>
+  <div id="footer">
     Coded with ♥ by <br><br>
     © Anthony Chow 2020
-  </footer>
+  </div>
   <script type="text/javascript">
-    // Logo and "Projects" Page Link + Animation
+    // About Page Link + Animation
 
-    let logo = document.getElementById("logo-link");
     let projects = document.getElementById("projects-link");
     let body = document.getElementById("body");
 
-    logo.addEventListener("click", function() {
-    body.className = "leave";
-    setTimeout(500);
-    window.location.href = "https://achow605.github.io/"
-    });
-
     projects.addEventListener("click", function() {
-    body.className = "leave";
-    setTimeout(500);
-    window.location.href = "https://achow605.github.io/";
-    });
-
-    // "About" Page Link + Animation
-
-    let about = document.getElementById("about-link");
-
-    about.addEventListener("click", function() {
       body.className = "leave";
       setTimeout(500);
-      window.location.href = "about";
+      window.location.href = "http://achow605.github.io/";
     });
 
     // Mobile Navigation Menu
@@ -141,17 +121,6 @@
       document.getElementById("mySidenav").style.width = "0";
 
     }
-
-    // Navigation Bar on Scroll
-
-    window.addEventListener("scroll", function() {
-      if (window.scrollY > 20) {
-        document.getElementById("nav-container").classList.add("small-nav");
-      } else {
-        document.getElementById("nav-container").classList.remove("small-nav");
-      }
-
-    })
   </script>
 </body>
 

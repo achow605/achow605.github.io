@@ -9,103 +9,109 @@
   <meta name="google-site-verification" content="pyTXo0EcGIfvsLAczoDhsnnOOA_ivPa2PGZ-92zIpOQ" />
 
   <title>Anthony Chow • Portfolio</title>
-
   <!-- Import Normalize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="style.min.css" />
+  <link rel="stylesheet" href="style.css" />
   <!-- Fly-In On Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179974849-1"></script>
 </head>
 
-<body id="home-container">
-  <nav>
-    <div id="nav-container">
-      <h1 id="logo-link" onclick="document.getElementById('home-container').scrollIntoView(true)">Anthony Chow</h1>
+<body id="body">
+  <header id="header">
+    <div id="blobs">
+      <img id="blob1" src="assets/blueblob.svg" alt=blob />
+      <img id="blob2" src="assets/orangeblob.svg" alt=blob />
+      <img id="blob3" src="assets/redblob.svg" alt=blob />
+    </div>
+    <img src="./assets/tabletblobs.jpg" id="tabletblobs" alt=blob>
+    <img src="./assets/mobileblobs.jpg" id="mobileblobs" alt=blob>
+    <div id="navbar">
       <ul id="links">
-        <li id="projects-link">Projects</li>
+        <li><a onclick="document.getElementById('content').scrollIntoView(true)">Projects</a></li>
         <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
         <li id="about-link">About Me</li>
       </ul>
-
-      <!-- Mobile Navigation Menu -->
-      <div id=mobile-links>
-        <div id="mySidenav" class="sidenav">
-          <div id="mobile-nav-links">
-            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-            <a onclick="closeNav(); document.getElementById('anchor').scrollIntoView(true)">Projects</a>
-            <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
-            <a onclick="closeNav(); window.location.href = 'about';">About Me</a>
-          </div>
-        </div>
-
-        <div id="nav-icon-container">
-          <h1 onclick="document.getElementById('home-container').scrollIntoView(true)">Anthony Chow</h1>
-          <span onclick="openNav()">&#9776;</span>
-        </div>
-      </div>
     </div>
-  </nav>
 
-  <header id="header">
-    <div id="intro" class="flyin">
-      <h1>Hi, I'm <b class="color-change" id="name">Anthony Chow</b></h1>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+
+    </div>
+
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- ###################### -->
+
+    <div id="intro">
+      <h1>Hi, I'm <b>Anthony Chow</b></h1>
       <h2>I study Human-Computer Interaction at the University of California Davis</h2>
     </div>
-    <img id="home-portrait" class="neumorphism flyin" src="./assets/me.jpg" alt="Anthony Chow">
   </header>
 
-  <div class="downArrow bounce" id="anchor">
-    <a href="#anchor"><img src="assets/downArrow.svg" alt=blob style="filter: invert(.75)"/></a>
+  <div class="downArrow bounce">
+    <a href="#case-studies"><img src="assets/downArrow.svg" style="width: 2vw;" alt=blob /></a>
   </div>
 
-  <main id="content">
+  <section id="content">
     <div id="case-studies">
       <div class="case-study" data-aos="fade-up">
-        <div class="case-study-text">
-          <h1>
+        <div class="case-study-left">
+          <h1 class="product-type">
             Digital Calendar Integration Tool
           </h1>
-          <h2>
+          <h2 class="product-name">
             Justice Calendar
           </h2>
-          <h3>
+          <h3 class="product-desc">
             Helping commit action and understanding towards racial justice
           </h3>
           <button style="background-color: #EC80A4" onclick="window.location.href='case-studies/justice-calendar';">
             View Case Study
           </button>
         </div>
-        <div class="case-study-img">
+        <div class="case-study-right">
           <img class="product-img" src="assets/justice-calender-mockup.jpg" alt=blob />
         </div>
       </div>
       <div class="case-study" data-aos="fade-up">
-        <div class="case-study-text">
-          <h1>Volunteering Opportunity & Local Resource Tool</h1>
-          <h2>Helpr</h2>
-          <h3>Discover and connect with local organizations & nonprofits in your community</h3>
+        <div class="case-study-left">
+          <h1 class="product-type">
+            Volunteering Opportunity & Local Resource Tool
+          </h1>
+          <h2 class="product-name">
+            Helpr
+          </h2>
+          <h3 class="product-desc">
+            Discover and connect with local organizations & nonprofits in your community
+          </h3>
           <button style="background-color: #FECB48" onclick="window.location.href='case-studies/helpr';">
             View Case Study
           </button>
         </div>
-
-        <div class="case-study-img">
-          <img src="assets/helpr-mockup.jpg" alt=blob />
+        <div class="case-study-right">
+          <img class="product-img" src="assets/helpr-mockup.jpg" alt=blob />
         </div>
       </div>
-
       <div class="case-study" data-aos="fade-up">
-        <div class="case-study-text">
-          <h1>
+        <div class="case-study-left">
+          <h1 class="product-type">
             Digital Queuing System
           </h1>
-          <h2>
+          <h2 class="product-name">
             TutorQueue
           </h2>
-          <h3>
+          <h3 class="product-desc">
             A reinvented queuing system for the UC Davis Computer Science
             Tutoring Center
           </h3>
@@ -113,12 +119,12 @@
             View Case Study
           </button>
         </div>
-        <div class="case-study-img">
+        <div class="case-study-right">
           <img class="product-img" src="assets/tutorqueue-mockup.jpg" alt=blob />
         </div>
       </div>
     </div>
-  </main>
+  </section>
 
   <footer id="footer">
     Coded with ♥ by <br><br>
@@ -134,32 +140,37 @@
 
 
   <script type="text/javascript">
+    // Parallax Scrolling
+
+
+
+    let blob1 = document.getElementById("blob1");
+    let blob2 = document.getElementById("blob2");
+    let blob3 = document.getElementById("blob3");
+    let intro = document.getElementById("intro");
+
+    let tabletblobs = document.getElementById("tabletblobs");
+    let mobileblobs = document.getElementById("mobileblobs");
+    window.addEventListener("scroll", function() {
+      var value = window.scrollY;
+
+      blob1.style.top = 45 - value * 0.02 + "%";
+      blob2.style.top = 18 - value * 0.01 + "%";
+      blob3.style.top = 73 - value * 0.05 + "%";
+      tabletblobs.style.top = 20 - value * 0.02 + "%";
+      mobileblobs.style.top = 35 - value * 0.02 + "%";
+    });
 
     // "About" Page Link + Animation
 
     let about = document.getElementById("about-link");
-    let name = document.getElementById("name");
-    let portrait = document.getElementById("home-portrait");
-    let body = document.getElementById("home-container");
+    let body = document.getElementById("body");
 
     about.addEventListener("click", function() {
       body.className = "leave";
       setTimeout(500);
       window.location.href = "about";
     });
-
-    name.addEventListener("click", function() {
-      body.className = "leave";
-      setTimeout(500);
-      window.location.href = "about";
-    });
-
-    portrait.addEventListener("click", function() {
-      body.className = "leave";
-      setTimeout(500);
-      window.location.href = "about";
-    });
-
 
 
     // Mobile Navigation Menu
@@ -176,17 +187,6 @@
       document.getElementById("mySidenav").style.width = "0";
 
     }
-
-    // Navigation Bar on Scroll
-
-    window.addEventListener("scroll", function() {
-      if (window.scrollY > 20) {
-        document.getElementById("nav-container").classList.add("small-nav");
-      } else {
-        document.getElementById("nav-container").classList.remove("small-nav");
-      }
-
-    })
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->

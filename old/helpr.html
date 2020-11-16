@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Anthony Chow • Justice Calendar</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body id="body">
+  <div id="header" style="height: 20vh">
+    <div id="navbar">
+      <ul id="links">
+        <li id="projects-link">Projects</li>
+        <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
+        <li id="about-link">About Me</li>
+      </ul>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+
+    </div>
+
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- ###################### -->
+  </div>
+  <!-- <div id="case-study-banner">
+    <img src="../assets/justice-calender-mockup.jpg">
+  </div> -->
+  <div id="case-study-body-container">
+    <div id="case-study-body" class="helpr">
+      <h1>Helpr</h1>
+        <p><pre style="margin: 0 auto 5vh auto;">User Experience Design      |      Figma      |      Designathon Project      |      42 Hours </pre></p>
+      <img src="../assets/helpr-mockup.jpg" alt="Helpr Mockup">
+      <h2>Overview</h2>
+      <h3>Give and find help in your community</h3>
+      <p>Helpr is an app that connects users to <b>local resources and volunteer opportunities in their local communities</b>. Users can discover, share, and connect with organizations and nonprofits near them whether they want to volunteer their service or are in need of resources.
+      </p>
+      <h3>Project Timeline</h3>
+      <p>This project was done independently as a submission for the <a href="https://www.facebook.com/justdesignathon/" target="_blank">Just Design Designathon</a> which took place from September 18 to September 20. The total duration of project development was 42 hours. </p>
+      <h3>Designathon Details</h3>
+      <p>The Just Design Designathon is an event hosted by <a href="https://davisdi.org/" target="_blank">UC Davis' Design Interactive</a> and <a href="https://www.facebook.com/UCSCtechdesign/" target="_blank">UC Santa Cruz's Creative Tech Design</a>. The theme of the whole event is <b>designing for social justice</b>, and most of the project submitted for this revolved around this theme.
+        <br><br>
+        Participants could either collaborate on a project in groups or individually. <b>I worked alone on my project submission</b>.
+      </p>
+      <h2>Design Process</h2>
+      <h3>Research</h3>
+      <p>At the start of the designathon, all participants were given the following prompt to get them started with their projects:</p>
+        <p style="color: #ddaa00;" >As designers, you have a huge amount of responsibility but also a lot of power in using a human-centered process to explore, test, and polish solutions for problems in the world. <b>Decide on the issue that you as a team want to tackle, do some research to help you gain empathy on the stakeholders involved, and design a screen-based solution that might work!</b></p>
+        <p>Upon brainstorming user pain points and themes to revolve my project around, I decided to focus on volunteer work and local community based resources. To better understand the pain points and empathize with users surrounding this topic, I decided to send out a <b>survey as a Google Form</b>
+      </p>
+      <h3>Research Analysis</h3>
+      <p>Of the <b>57</b> respondents to our survey, I saw that:</p>
+      <ul>
+        <li><b>78.9%</b> of respondents were either not very aware or not aware at all of <b>nonprofit organizations</b> in their communities</li>
+        <li><b>87.7%</b> of respondents were either not very aware or not aware at all of <b>volunteer opportunities</b> in their communities </li>
+        <li><b>43.9%</b> of respondents <b>did not know where to start</b> if they wanted to start volunteering</li>
+        <li><b>73.7%</b> of respondents would consider volunteering and/or donating more if <b>opportunities were more easily accessible</b></li>
+      </ul>
+      <p>From this collected data, I took away that:</p>
+      <ul>
+        <li>Most people have <b>little to no awareness of organizations and/or nonprofits</b> in their communities</li>
+        <li>Most people <b>don't know where to start</b> with volunteering if they had the chance to</li>
+        <li>More people would be inclined to support their communities given that opportunities are <b>more easily accessible</b></li>
+      </ul>
+      <h3>Ideation</h3>
+      <p>After collecting user data and interpreting the results, I began ideating some key features that I wanted to implement that directly targeted the pain points highlighted from my survey results. I knew that I wanted the following in my product:
+        <ul>
+          <li>A dashboard type interface that <b>highlights local resources and volunteer opportunities</b> closest to the user's location</li>
+          <li>Easily access basic information regarding <b>volunteering opportunities and the organization(s) hosting them</b></li>
+          <li>Expand details on events and be able to <b>register directly, mark as "interested", or share with friends</b></li>
+          <li><b>Connect with friends</b> to see what opportunities they're interested in or planning to participate in</li>
+          <li>Simple search function to find specific resources or organizations catering to specific communities utilizing <b>tags and filters</b></li>
+      </ul>
+      </p>
+      <h3>Wireframe & Sketch</h3>
+      <img src="../assets/helpr-lf.JPG" alt="Helpr Low-Fidelity Prototype">
+      <p>After collecting user data and interpreting my findings, I got to work on making <b>wireframe sketches</b> of the screens including all of the ideated features in mind. I used my iPad to make <b>digital sketches</b> of screens and the main interactions that would occur between each screen.</p>
+      <h3>Prototyping</h3>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/helpr-hf1.gif" alt="User Sign Up">
+        </div>
+        <div class="hf-right">
+          <h4>Individual User Setup</h4>
+          <p>For this interaction, I wanted the flow to be as smooth and streamline as possible by adding a <b>progress bar at the bottom of the screen</b> so that users know what the sign up process looks like holistically.</p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/helpr-hf2.gif" alt="Organization Sign Up">
+        </div>
+        <div class="hf-right">
+          <h4>Organization User Setup</h4>
+          <p>If hosting events, groups can also make accounts and get verified as long as they provide the necessary information. Similar to how accounts get verified on social media, this can ensure that other users can <b>ensure the safety and validity of organizations</b>. </p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/helpr-hf3.gif" alt="Opportunities Dashboard">
+        </div>
+        <div class="hf-right">
+          <h4>Opportunities Dashboard</h4>
+          <p>This page displays <b>local volunteering opportunities and organizations</b> near the user's location that they can get quick information on or expand to view more details. There is a tab at the top to open up <b>opportunities that are virtual</b> as well to promote accessibility towards those who would prefer to volunteer that way.</p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/helpr-hf4.gif" alt="Volunteering Opportunity Page">
+        </div>
+        <div class="hf-right">
+          <h4>Volunteering Opportunity Page</h4>
+          <p>When opening up details on a specific volunteering opportunity, they can access all the necessary information to <b>learn more about the event, the organization, and the tags associated with the event</b>. Users can also <b>share the event with friends or mark the event as "Interested"</b> so that their friends using the app can see. </p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/helpr-hf5.gif" alt="Search Function">
+        </div>
+        <div class="hf-right">
+          <h4>Search Function</h4>
+          <p>Users can <b>filter their search for local organizations that tailor to their own needs</b>. From here, users can learn more about the organizations near them and connect with them.</p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/helpr-hf6.gif" alt="User & Community Page">
+        </div>
+        <div class="hf-right">
+          <h4>User & Community Page</h4>
+          <p>Users can access and edit their profile which holds their <b>activity, interested opportunities, and the user's friend's activity</b>. Your community can be expanded by adding more friends and making more connections.</p>
+        </div>
+      </div>
+      <h3>Challenges and Reflections</h3>
+      <h4>Time restraint</h4>
+      <p>This was my first time participating in a designathon, so I've never had this short of a timespan to complete the project. Because of this, I could not go that in depth with the design process as I've done with past projects, and I didn't have the time to do any testing and iterations. Nonetheless, I was able to conduct user research, create a wireframe, and produce a high-fidelity prototype in the short time span I was given. </p>
+      <h4>Working Alone</h4>
+      <p>While most other projects in this designathon were in groups, I decided to take on the challenge of making this a personal project of mines, so I worked completely alone in the design process for this. I did, however, reach out to my friends and peers to help me conduct my research and help me with my ideation stage.</p>
+      <h4>Reflection</h4>
+      <p> This project was definitely the most challenging one I've ever done so far since the timeline was so short and I was working alone. Throughout this entire designathon though, I've learned so much from making mistakes and confronting unique challenges with this project that I don't think I could have gotten to experience anywhere else. Although I did not win any awards for this designathon, I was extremely humbled to see the winners and the amazing products they've created. Seeing all of the other projects done by other groups reminded me that there is a lot for me to learn with work like this. Nonetheless, I am immensely proud of this project and I hope to do something like it again soon.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div id="footer">
+    Coded with ♥ by <br><br>
+    © Anthony Chow 2020
+  </div>
+</body>
+
+<script type="text/javascript">
+  // "Projects" Page Link + Animation
+
+  let projects = document.getElementById("projects-link");
+  let body = document.getElementById("body");
+
+  projects.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "http://achow605.github.io/";
+  });
+
+  // "About" Page Link + Animation
+
+  let about = document.getElementById("about-link");
+
+  about.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "../about";
+  });
+
+  // Mobile Navigation Menu
+
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "100vw";
+  setTimeout(10);
+  document.getElementById("mobile-nav-links").style.opacity = "1";
+  }
+
+  function closeNav() {
+  document.getElementById("mobile-nav-links").style.opacity = "0";
+  setTimeout(10);
+  document.getElementById("mySidenav").style.width = "0";
+
+  }
+</script>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Anthony Chow • Justice Calendar</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body id="body">
+  <div id="header" style="height: 20vh">
+    <div id="navbar">
+      <ul id="links">
+        <li id="projects-link">Projects</li>
+        <li><a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a></li>
+        <li id="about-link">About Me</li>
+      </ul>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+      <div id="mobile-nav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a onclick="closeNav(); document.getElementById('content').scrollIntoView(true)">Projects</a>
+        <a href="https://drive.google.com/file/d/1WO8jqoFlAT2EMLnsksBzRlgXXUXFj4xh/view?usp=sharing" target="_blank">Resume</a>
+        <a href="about">About Me</a>
+      </div>
+    </div>
+    <div id="nav-icon-container">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+  </div>
+  <div id="case-study-body-container">
+    <div id="case-study-body" class="justice-calendar">
+      <h1>Justice Calendar</h1>
+        <p><pre style="margin: 0 auto 5vh auto;">Product Design      |      Figma & Webflow      |      Team of 4      |      5(+6) Weeks </pre></p>
+      <img src="../assets/justice-calender-mockup.jpg" alt="Justice Calendar Mockup">
+      <h2>Overview</h2>
+      <h3>Justice is a Marathon, not a Sprint</h3>
+      <p>Justice Calendar is a simple Google Calendar integration tool designed for people who want to <b>learn more about racial injustice</b> happening in the world and what they can do about it by <b>allocating time for users to learn,
+        listen, and reflect</b> while working around their busy schedules.
+        <br><br>
+        Starting as a project for the UC Davis Design Interactive cohort, we continued working on Justice Calendar after the initial <b>five weeks</b> of the project to work part time with the professor as interaction designers.
+      </p>
+      <h2>Contributors & Roles</h2>
+      <img src="../assets/jc-team.jpg" alt="Team pictures">
+      <h2>Design Process (5 Weeks)</h2>
+      <h3>Research</h3>
+      <p>Upon starting this sprint, we first consulted with our client, an assistant professor for the Design department at UC Davis. We discussed the initial concept and idea behind a calendar tool that would schedule time to learn about racial
+        injustice and promote anti-racist actions.
+        <br><br>
+        After consulting with our client, we wanted to get a better understanding of what kind of commitment users are willing to make to learn more about racial injustice and how people consider their current general knowledge on it, so we created a
+        <b>Google Form survey</b> with questions pertaining to these along with general information about respondents including their own ethnicities.
+      </p>
+      <h3>Research Analysis</h3>
+      <p>Of the 81 respondents to our survey, we saw that:</p>
+      <ul>
+        <li><b>91.4%</b> of respondents identified as people of color</li>
+        <li><b>51.9%</b> of respondents rated themselves at 3/5 on their level of knowledge on racial inequity. </li>
+        <li><b>97.5%</b> of respondents were willing to commit at least 5 minutes to learn more</li>
+        <li><b>61.7%</b> of respondents were willing to commit 15-45 minutes</li>
+        <li><b>63%</b> of respondents primarily used google calendar to schedule commitments</li>
+      </ul>
+      <p>From this collected data, we took away that:</p>
+      <ul>
+        <li><b>People of all ethnicities can learn more about racial injustice and have varying levels of knowledge</li>
+        <li>People are generally willing to put in time to learn more about racial injustice</li>
+        <li>A majority of people like to use Google Calendar to schedule things for them to do</b></li>
+      </ul>
+      <h3>Ideation</h3>
+      <h4>Experience Mapping</h4>
+      <img src="../assets/jc-experiencemap.jpg" alt="Experience Map">
+      <p>After gathering these user insights, we created an <b>experience map</b> of a potential user to better understand any <b>pain points</b> that might occur along the way when trying to learn about racial injustice. </p>
+      <h4>Affinity Mapping</h4>
+      <img src="../assets/jc-affinitymap.JPG" alt="Affinity Map">
+      <p>After this, we generated an <b>affinity map</b> to organize these pain points and ideate some solutions to them. We did this by listing pain points as sticky notes and then organizing them into categories, helping our team get a better
+        understanding of how <b>pain points may relate to each other and how to effectively tackle them</b>.</p>
+      <h4>Problem Statement</h4>
+      <p>From this, we were able to create our problem statement: </p>
+      <p style="color: #EC80A4; text-align: center;"><b>"How might we encourage users to commit time each week to learn about racial injustice and set personal goals to spark understanding, self-reflection, and informed action?”</b></p>
+      <h4>Wireframe Sketches</h4>
+      <p>We looked at different scheduling apps that were mainly Google Chrome extensions. We took inspiration from numerous examples to help us understand how we should create our user flow and what kind of application we wanted to make for this,
+        which we decided should be a Google Chrome extension as well. We thought about reflection objectives to increase retention and a reward system to help users commit to scheduling again. This ended with a couple wireframe sketches from me and
+        the rest of our project group. The wireframes we sketched went over the scheduling process as well as the reflection interaction after viewing scheduled content.</p>
+      <img src="../assets/jc-wireframes.jpg" alt="Wireframe Sketches">
+
+      <h3>Low-Fidelity Prototyping</h3>
+      <img src="../assets/jc-lf.png" alt="Low-Fidelity Prototypes">
+      <img src="../assets/jc-lf2.jpg" alt="Low-Fidelity Prototypes">
+      <p>We started with a low-fidelity prototype using <b>Figma</b> to create our app. We experimented with full size pages and interfaces that only took a small portion of the screen.
+      </p>
+      <h3>High-Fidelity Prototyping</h3>
+      <img src="../assets/jc-hfdg.JPG" alt="High-Fidelity Design Guidelines">
+      <p>We consulted with our client and our mentor to move onto our high-fidelity prototype, where we created <b>design guidelines</b> and worked to improve the <b>flow of our scheduling process.</b></p>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/jc-hf1.gif" alt="First-Time Setup" class="dropshadow">
+        </div>
+        <div class="hf-right">
+          <h4>Login & User Setup</h4>
+          <p>From our low-fidelity prototype to our high-fidelity prototype, we wanted to ensure that the process of users getting started was <b>streamline and smooth.</b> Part of this process was the specific language used in each screen to provide a
+            sense of guidance and comfort throughout the process. We wanted to ensure that users knew exactly what they're supposed to do and why they're doing it.</p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left">
+          <img src="../assets/jc-hf2.gif" alt="Scheduling" class="dropshadow">
+        </div>
+        <div class="hf-right">
+          <h4>Scheduling</h4>
+          <p>From our user research, we wanted to incorporate seamless integration with Google Calendar and provide a scheduling interface that is both <b>intuitive and familiar.</b> </p>
+        </div>
+      </div>
+      <div class="hf-body">
+        <div class="hf-left" style="width: 70%;">
+          <img src="../assets/jc-hf3.gif" alt="Calendar View" style="width: 90%;" class="dropshadow">
+        </div>
+        <div class="hf-right" style="width: 30%;">
+          <h4>Calendar View</h4>
+          <p>Users can view the scheduled block of time on a weekly calendar. This would only display the calendar events made from Justice Calendar.</p>
+        </div>
+      </div>
+      <h4>Fullscreen Interfaces</h4>
+      <p>Users can access a larger dashboard with their scheduled content. User stats can <b>incite more engagement and promotes consistant use of Justice Calendar</b>. Reflections for certain materials may hold a lot of important and insightful
+        information, so users can also access past reflections in their journal.</p>
+        <img src="../assets/jc-hf4.gif" alt="Dashboard & More" class="dropshadow">
+      <h4>User Testing</h4>
+      <p>
+        We were able to conduct <b>testing with our client</b> at the time, and we continued to iterate on the <b>verbage and intuitiveness of the first-time user flow</b>. At the end of the design sprint, our team presented our final version of the high-fidelity
+        prototype to the rest of the cohort and other design professionals.
+      </p>
+      <h3>Further Development (6 Weeks)</h3>
+      <h4>Working with our Client</h4>
+      <img src="..\assets\justice-calendar-web-mockup.jpg" alt="Justice Calendar with Further Development">
+      <p>After concluding the project with Design Interactive, our client wanted to hire us for further development of the Justice Calendar project. One of the most prominent changes made in this extension of the project was the shift from a Google
+        <b>Chrome extension to a web application</b>. Nonetheless, the interfaces still looked similar and were optomized for the larger interface size.
+        <br><br>
+        During these six additional weeks, we dove straight into ideations and prototyping to design and create
+        this web application. This process was a lot more different than before though: we started <b>working with back-end developers</b> and collaborated often to ensure that the design and functionality worked together. The back-end developers were unfamiliar with front-end development, so our team of interaction designers took it upon ourselves to <b>learn a bit of front-end web development</b>. We were posed with the unique challenge of <b>learning CSS and web design principles</b> after working on our initial prototypes on Figma. We decided to try using <b>Webflow</b>, which simplified the CSS coding to a more intuitive interface while also being able to export to developers so that they can develop the back end with ease.
+        <br><br>
+        The site is now live at <a href="https://justicecalendar.org/" target="_blank">justicecalendar.org</a>.
+      </p>
+      <h3>Challenges and Reflections</h3>
+      <h4>Remote Collaboration</h4>
+      <p>This project posed a lot of unique challenges for me and every other member of our project team. Working together as a group was a bit challenging given that a member lived in <b>Australia</b> with the rest of us in the US, so we always had to work
+        around the <b>differing time zones.</b></p>
+      <h4>Learning Webflow (After the Design Sprint)</h4>
+      <p>During our time working as hired designers for our client, we did not initially think that we’d be working partly as web designers as well. Most of our group was unfamiliar with coding in CSS or flexbox and other web design principles so we
+        spent a lot of our working time just learning more about it. Our client had us work with the web development tool Webflow, so there was a slight learning curve as well when moving forward with this project</p>
+      <h4>Reflection</h4>
+      <p>This was my very first design sprint while working with a real client and my very first taste of what <b>real-world design work</b>. Although it was challenging and intimidating at first, I came out of this project with so much more experience and
+        knowledge of the design process and working with clients. I got introduced to <b>research and ideation tools</b> that helped me learn to empathize with users and prioritize pain points. Out of all the other project groups in Design Interactive, our
+        project group was the <b>only one to get hired by our client to continue our work</b>. I got the opportunity to work with <b>real web developers</b> and learn how to effectively communicate with them in developing the overall application.
+      </p>
+    </div>
+  </div>
+
+  <div id="footer">
+    Coded with ♥ by <br><br>
+    © Anthony Chow 2020
+  </div>
+</body>
+
+<script type="text/javascript">
+  // "Projects" Page Link + Animation
+
+  let projects = document.getElementById("projects-link");
+  let body = document.getElementById("body");
+
+  projects.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "http://achow605.github.io/";
+  });
+
+  // "About" Page Link + Animation
+
+  let about = document.getElementById("about-link");
+
+  about.addEventListener("click", function() {
+    body.className = "leave";
+    setTimeout(500);
+    window.location.href = "../about";
+  });
+
+  // Mobile Navigation Menu
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100vw";
+    setTimeout(10);
+    document.getElementById("mobile-nav-links").style.opacity = "1";
+  }
+
+  function closeNav() {
+    document.getElementById("mobile-nav-links").style.opacity = "0";
+    setTimeout(10);
+    document.getElementById("mySidenav").style.width = "0";
+
+  }
+</script>
+
+</html>
