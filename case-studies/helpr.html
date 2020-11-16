@@ -262,6 +262,17 @@
     window.location.href = "https://achow605.github.io/";
     });
 
+
+    // "About" Page Link + Animation
+
+    let about = document.getElementById("about-link");
+
+    about.addEventListener("click", function() {
+      body.className = "leave";
+      setTimeout(500);
+      window.location.href = "../about";
+    });
+
     // Mobile Navigation Menu
 
     function openNav() {
