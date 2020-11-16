@@ -32,15 +32,22 @@ body {
 $accent-color: #303030;
 /* PAGE VARIATIONS */
 #justice-calendar {
-  $accent-color: #E35183 !global;
+  b, a , blockquote{
+    color: #E35183;
+  }
 }
 
 #helpr {
-  $accent-color: #ddaa00 !global;
+  b, a , blockquote{
+    color: #ddaa00;
+  }
 }
 
 #tutorqueue {
-  $accent-color: #BC941D !global;
+  b, a , blockquote{
+    color: #BC941D;
+  }
+
   @media screen and (min-width: 599px) {
     .hf-body {
       flex-direction: row;
