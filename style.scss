@@ -458,7 +458,7 @@ nav {
       }
     }
     @media screen and (min-width: 999px) {
-      margin-left: 5%;
+      margin-right: 5%;
     }
   }
 
@@ -487,6 +487,7 @@ nav {
   }
   @media screen and (min-width: 999px) {
     display: flex;
+    flex-direction: row-reverse;
     padding: 0;
   }
 }
