@@ -28,7 +28,6 @@ body {
   background: linear-gradient(145deg, #ffffff, #dddddd);
   box-shadow:  27px 27px 54px #d0d0d0,
              -27px -27px 54px #ffffff;
-
   padding: 5px;
 }
 
@@ -617,6 +616,15 @@ nav {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
+
+      &:nth-child(odd) {
+        flex-direction: row;
+
+        .hf-text {
+          padding-left: 0;
+          padding-right: 5%;
+        }
+      }
     }
 
     .hf-img {
@@ -628,6 +636,7 @@ nav {
 
     .hf-img-wide {
       flex: 1.35;
+      margin: 2em 0;
     }
 
     .hf-text {
