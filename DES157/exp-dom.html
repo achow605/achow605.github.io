@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Backwards Text Translator</title>
+  </head>
+  <body>
+    <h1>Backwards Text translator</h1>
+
+    <p id="before"></p>
+    <br>
+    <p id="after"></p>
+
+    <script>
+    // My program takes in user input and outputs a reverse version of it.
+    // In the console, it will also break down how each individual words was reversed.
+
+      var input = prompt("Please type our a word or sentence");
+
+      var inputArray = input.split(" ");
+
+
+      function translate(input) {
+        output = "";
+
+        for (var i=input.length-1; i>-1; i--) {
+          output += input[i];
+        }
+        return output;
+      }
+
+      var output = translate(input);
+
+      var outputArray = output.split(" ").reverse();
+
+      for (var i=0; i<inputArray.length; i++) {
+        console.log(`${inputArray[i]} -> ${outputArray[i]}`);
+      }
+
+      document.getElementById("before").innerHTML = `You inputted: <b>${input}</b>`;
+
+      document.getElementById("after").innerHTML = `Reversed: <b>${output}</b>`;
+
+    </script>
+  </body>
+</html>
