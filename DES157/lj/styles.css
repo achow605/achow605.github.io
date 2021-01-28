@@ -24,9 +24,15 @@ p, a {
 /* Navigation Bar*/
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 15vh;
+}
+
+nav img {
+  height: 30%;
+  width: auto;
+  cursor: pointer;
 }
 
 nav ul {
@@ -35,7 +41,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 5em;
+  margin: 5em 0 5em 5em;
   font-size: 1em;
   font-weight: 500;
 }
@@ -54,6 +60,7 @@ main article {
   background-color: #3E3E3E;
   border-radius: 5px;
   padding: 2em;
+  margin-bottom: 2em;
 }
 
 main article h2 {
@@ -78,4 +85,18 @@ main article a {
   font-family: "Anonymous Pro", sans-serif;
   font-weight: 700;
   color: #48ad9c;
+}
+
+footer {
+  margin: 15% 0 8% 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0 5%;
 }
