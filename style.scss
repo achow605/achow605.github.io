@@ -34,21 +34,21 @@ body {
 $accent-color: #303030;
 /* PAGE VARIATIONS */
 #justice-calendar {
-  b, a , blockquote{
-    color: #E35183;
-  }
+  // b, a , blockquote{
+  //   color: #E35183;
+  // }
 }
 
 #helpr {
-  b, a , blockquote{
-    color: #ddaa00;
-  }
+  // b, a , blockquote{
+  //   color: #ddaa00;
+  // }
 }
 
 #tutorqueue {
-  b, a , blockquote{
-    color: #BC941D;
-  }
+  // b, a , blockquote{
+  //   color: #BC941D;
+  // }
 
   @media screen and (min-width: 599px) {
     .hf-body {
