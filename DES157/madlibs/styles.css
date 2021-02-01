@@ -115,6 +115,10 @@ main {
   border: none;
 }
 
+#input-form label input:focus {
+  outline: none;
+}
+
 #input-form > input, #restart {
   padding: 10px 0;
   width: 150px;
