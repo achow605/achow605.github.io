@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mad Libs 2.0: DES 157 Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="logo">
+      <h1>RE: DES 157 Classroom Behavior</h1>
+    </header>
+
+    <main>
+      <div id="form-container">
+        <div id="pseudo-toolbar">
+          <h1>New Madlib</h1>
+          <ul>
+            <li><i class="fas fa-window-minimize"></i></li>
+            <li><i class="fas fa-expand-alt"></i></li>
+            <li><i class="fas fa-times"></i></li>
+          </ul>
+        </div>
+        <div id="form-wrapper">
+          <form id="input-form">
+            <label>First Name: <input type="text" name="fname" id="fname" required></label>
+            <label>Verb: <input type="text" name="verb" id="verb" required></label>
+            <label>Noun: <input type="text" name="noun" id="noun" required></label>
+            <label>Adverb: <input type="text" name="adverb" id="adverb" required></label>
+            <label>Noun: <input type="text" name="noun2" id="noun2" required></label>
+            <label>Emotion: <input type="text" name="emotion" id="emotion" required></label>
+
+            <input type="submit" value="Check Mail">
+          </form>
+        </div>
+      </div>
+
+      <section id="transition" class="hidden">
+        <h1>✉️</h1>
+        <p>1 New Email!</p>
+      </section>
+      <section id="madlib-container" class="hidden">
+        <img src="images/emailheader.jpg" alt="emailheader">
+        <p id="madlib" class="showing">
+        </p>
+        <button id="restart">New Madlib</button>
+      </section>
+
+    </main>
+    <footer>
+      <h2>Anthony Chow</h2>
+      <h3>DES 157 Section 002</h3>
+    </footer>
+  </body>
+</html>
