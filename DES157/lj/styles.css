@@ -87,6 +87,22 @@ main article a {
   color: #48ad9c;
 }
 
+main article figure {
+  display: inline-block;
+  width: 50%;
+  float: right
+}
+
+main article figure img {
+  width: 100%;
+  height: auto;
+}
+
+main article figure figcaption {
+  font-family: "Anonymous Pro", sans-serif;
+  font-weight: 400;
+}
+
 footer {
   margin: 15% 0 8% 0;
 }
