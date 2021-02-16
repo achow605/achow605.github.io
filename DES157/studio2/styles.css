@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+h1, h2 {
+  font-family: 'Merienda One', cursive;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+#interactive-banner #images img {
+  width: 100%;
+  height: 100vh;
+  object-position: bottom;
+  object-fit: cover;
+  transition: visibility 0.1s ease-in-out,
+              opacity 0.1s ease-in-out;
+}
+
+#plants {
+  z-index: 0;
+}
+
+#pothos, #philo, #others, #monstera {
+  z-index: 1;
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.revealed {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#grid-wrapper {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(8, 1fr);
+  z-index: 98;
+
+}
+
+.pothos, .philo, .others, .monstera {
+  cursor: pointer;
+}
+
+#grid-wrapper .box {
+  padding: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: monospace;
+  text-align: center;
+}
+
+#overlay {
+  transition: visibility 0.2s ease-in-out,
+              opacity 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0,0.25);
+  z-index: 98;
+}
+
+.hiddenOverlay {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.revealOverlay {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#overlay .plant-container {
+    position: relative;
+    width: 25vw;
+    height: 80vh;
+    top: 13%;
+    border-radius: 10px;
+    margin: 0 1em;
+}
+
+#overlay .plant-container .plant-imgs {
+  height: 60%;
+}
+
+#overlay .plant-container .plant-imgs img {
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.plantImg1 {
+  z-index: 101;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.plantImg1:hover {
+  opacity: 0;
+}
+
+.plantImg2 {
+  z-index: 100;
+}
+
+#overlay .plant-container .plant-desc {
+  height: 40%;
+  background-color: antiquewhite;
+  padding: 1.5em;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#overlay .plant-container .plant-desc h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3vh;
+}
+
+#overlay .plant-container .plant-desc h2 {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+  font-size: 2vh;
+  color: #777777;
+}
+
+#overlay .plant-container .plant-desc p {
+  font-size: 2vh;
+  font-weight: 500;
+
+}
