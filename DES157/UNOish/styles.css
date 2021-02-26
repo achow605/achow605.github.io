@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  background-image: url('images/pool_table.png');
+  color: whitesmoke;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  height: 40vh;
+  padding-top: 5vh;
+
+  display: flex;
+  justify-content: center;
+  transition: height 0.5s ease-in-out;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+main #game-start {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+main #game-start #play-btn{
+  background-color: whitesmoke;
+  color: black;
+
+  padding: 20px 50px;
+  border-radius: 10px;
+
+  font-size: 2em;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+main #game-start #play-btn:hover {
+  transform: scale(1.05);
+}
+
+main #game-start #rules {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  line-height: 200%;
+}
+
+main #game-start #rules b {
+  font-size: 1.5em;
+}
+
+#start-msg, #no-match-msg, #win-msg, #skip-msg, #turn-msg, #restart-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 3em;
+
+  transition: visibility 0.25s ease-in-out,
+              opacity 0.25s ease-in-out;
+}
+
+#no-match-msg, #skip-msg, #turn-msg {
+  top: 80%;
+  font-size: 1.5em;
+}
+
+#restart-btn {
+  background-color: whitesmoke;
+  color: black;
+
+  padding: 20px 50px;
+  border-radius: 10px;
+
+  font-size: 2em;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+  top: 70%;
+
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+#game-board {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.1);
+
+  transition: visibility 0.25s ease-in-out,
+              opacity 0.25s ease-in-out,
+              transform 0.25s ease-in-out;
+}
+
+#stack {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* #stack .card {
+  transform: translateX(-11vw);
+}
+
+#stack .card:nth-of-type(1) {
+  transform: translateX(0);
+} */
+
+#card-hands {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: -40px;
+
+  transform: translateY(20px);
+
+  /* transition: visibility 0.25s ease-in-out,
+              opacity 0.25s ease-in-out,
+              transform 0.25s ease-in-out; */
+
+  transition: all 0.25s ease-in-out;
+}
+
+#player1-hand {
+  position: absolute;
+    bottom: -20px;
+    left: 40px;
+
+}
+
+#player2-hand {
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+}
+
+.card {
+  height: auto;
+  width: 11vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.3);
+
+  transition: box-shadow 0.25s ease-in-out,
+              margin-right 0.25s ease-in-out;
+}
+
+.hand {
+  margin: 0 40px;
+  width: 40vw;
+
+  position: relative;
+}
+
+.hand .card {
+  margin-right: -7vw;
+  position: relative;
+}
+
+#player2-hand {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7vw;
+}
+
+.hand .playable {
+  box-shadow: 0px 0px 16px 5px #FFF35C;
+  transition: all 0.05s ease-in-out;
+}
+
+.hand .playable:hover{
+  transform: translateY(-40px);
+  cursor: pointer;
+}
+
+.shorten {
+  height: 25vh;
+}
+
+.hidden {
+  position: absolute;
+  z-index: -999;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fadein {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fallin {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1) !important;
+}
+
+.slidein {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px) !important;
+}

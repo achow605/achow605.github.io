@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>UNO-ish</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="UNO-ish logo">
+  </header>
+  <main>
+    <section id="game-start">
+      <a id="play-btn">Play</a>
+      <p id="rules"><b>Rules:</b> <br>
+        1. Two players will each start with 5 cards <br>
+        2. In each turn, a player can place a card <br>
+        3. The played card must match either the color or card type<br>
+        4. If there are no matches, the player will draw a card and pass <br>
+        5. If you have more than 8 cards, your top card will be replaced! <br>
+        6. First player to one card wins!
+      </p>
+    </section>
+    <h1 id="start-msg" class="hidden">Game Start!</h1>
+    <h1 id="turn-msg" class="hidden"></h1>
+    <h1 id="no-match-msg" class="hidden">No Match! Draw 1 Card.</h1>
+    <h1 id="win-msg" class="hidden"></h1>
+    <a id="restart-btn" class="hidden">Play Again</a>
+    <h1 id="skip-msg" class="hidden"></h1>
+
+    <section id="game-board" class="hidden">
+      <div id="stack">
+        <img src="images/blue-1.jpg" alt="starting card" id="start-card" class="card">
+      </div>
+    </section>
+    <section id="card-hands" class="hidden">
+      <div class="hand" id="player1-hand">
+
+      </div>
+
+      <div class="hand" id="player2-hand">
+
+      </div>
+    </section>
+
+    <footer></footer>
+  </main>
+</body>
+
+</html>
