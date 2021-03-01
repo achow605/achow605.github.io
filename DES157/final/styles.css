@@ -20,6 +20,12 @@ footer ul li {
   margin: 0 5%;
 }
 
+footer ul li a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
+}
+
 main {
   max-width: 1024px;
   display: flex;
