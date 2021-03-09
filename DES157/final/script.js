@@ -25,6 +25,11 @@
     spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
   }
 
+  // DISABLE TRANSITIONS ON PAGE LOAD
+  window.addEventListener('load', function(){
+    document.querySelector('body').className = '';
+  })
+
   // START SCREEN
 
   const startScreen = document.querySelector('#start');
