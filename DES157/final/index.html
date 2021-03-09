@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js" defer></script>
+  <script src="anime.min.js" defer></script>
+
+  <title>Plantifest 🌱</title>
+</head>
+
+<body>
+  <svg id="start-bg" width="257" height="271" viewBox="0 0 257 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M0 175.4V271H64.3C63.3 267.6 41.5 238.8 51.3 240.9C52.6 245.5 55.9 253.9 58.9 257.7C62.9 264.5 69.2 271.8 78 269.3C75.1 266.9 68.3 261.4 65.6 258.6C64.4 256.4 52 243 59.1 244.4C68.8 251.4 80 258.3 88.9 266.2L109.4 256.1C102.6 248.7 90.1 241.4 82.8 234.9C82.3 232.9 76.1 225 81.1 226.1C85.1 232.1 95.1 238.6 100.8 242.7C104.5 246.1 112.8 252.3 118.1 252.7L148.6 238.1C140 230.3 120.4 222.2 122.5 208.4C124.8 208.4 126.9 214.1 127.8 215.6L135.4 223.1C141.3 227.2 152.6 237.7 160 232.9C155.7 232.5 126.1 206 143.1 216.6C168.3 238.6 160 230.8 187.1 217.2C178.8 213.9 169.5 209.1 161.8 204.5C160 202.3 161.7 201.1 163.6 199.8C168.5 199.4 175.8 204 180.3 205.4C183.3 207.3 191.2 212.2 194.8 212.7C203.3 206.8 219.2 193.7 226.5 186.4C219.7 185.9 206.2 183.6 200.1 180.7C198.7 179.5 188.9 178.1 192.7 175.5C202.3 178.1 218.8 181.3 228.5 183.8L236 178.1C228.2 175.7 217 173 208.9 171.6C206.4 170.8 202 170.7 199.9 168.9C198.8 166.3 201.8 166.3 203.5 165.9C215.5 167.7 239.2 181.2 243.7 169.2C256.8 135 256.2 121.9 256.2 121.9V0.1C242.4 0 0 0 0 0V121.8C0 203.3 0 175.4 0 175.4Z"
+      fill="#213F2B" />
+  </svg>
+
+  <header>
+    <h1 class="static">Anthony Chow</h1>
+    <div class="static underline normalWidth"></div>
+
+    <img src="images/q1.svg" alt="Progress bar" id="progress" class="hidden">
+  </header>
+  <main>
+    <section id="start" class="visible">
+      <svg width="208" height="382" viewBox="0 0 208 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+          <path class="small-plant"
+            d="M207.7 167.6C207.9 164.8 205.6 162.4 202.8 162.3C183.7 161.9 116.1 164 88.3 213.6C57.3 194.6 18.5 193.6 4.89998 194C2.09998 194.1 -0.100017 196.4 -1.73498e-05 199.3C4.89998 281.3 65.7 291.2 102.6 300.8C105 301.4 106.9 303.3 106.9 305.7V376.8C106.9 379.6 109.1 381.8 111.9 381.8H126.5C129.3 381.8 131.5 379.6 131.5 376.8V292C131.2 281.4 129.6 271.9 127.1 263.5C162.2 253.6 203.7 234.8 207.7 167.6Z"
+            fill="#E8E8C3" />
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="207.7" height="381.8" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+
+
+      <h1>Plantifest</h1>
+      <div></div>
+      <p>Find out which plant you identify most with</p>
+      <a id="start-btn">Let's Grow!</a>
+    </section>
+
+    <section id="q1">
+      <h1>What do you consider yourself more?</h1>
+
+      <div class="answers">
+        <div id="introverted">
+          <div class="spotlight hidden"></div>
+          <h1>introverted</h1>
+        </div>
+        <div id="extroverted">
+          <div class="above hidden">
+            <h2 class="above1">extroverted</h2>
+            <h2 class="above2">extroverted</h2>
+            <h2 class="above3">extroverted</h2>
+            <h2 class="above4">extroverted</h2>
+          </div>
+          <h1>extroverted</h1>
+          <div class="below hidden">
+            <h2 class="below5">extroverted</h2>
+            <h2 class="below6">extroverted</h2>
+            <h2 class="below7">extroverted</h2>
+            <h2 class="below8">extroverted</h2>
+          </div>
+
+        </div>
+      </div>
+
+      <a class="hidden">Next</a>
+
+    </section>
+    <section id="q2">
+      <h1>How would you rather spend your day off?</h1>
+
+      <div class="answers">
+        <h1 class="hiking">go hiking</h1>
+        <h1 class="beach">beach day</h1>
+      </div>
+
+      <div class="hike">
+        <img src="images/hike0.svg" alt="hike" class="inFirst">
+        <img src="images/hike1.svg" alt="hike" class="inSecond">
+        <img src="images/hike2.svg" alt="hike" class="inThird">
+        <img src="images/hike3.svg" alt="hike" class="inFourth">
+        <img src="images/hike4.svg" alt="hike" class="inFifth">
+      </div>
+
+      <div class="beach">
+        <img src="images/beach0.svg" alt="beach" class="inFirst">
+        <img src="images/beach1.svg" alt="beach" class="inSecond">
+        <img src="images/beach2.svg" alt="beach" class="inThird">
+        <img src="images/beach3.svg" alt="beach" class="inFourth">
+      </div>
+
+      <a class="hidden">Next</a>
+    </section>
+    <section id="q3">
+      <h1>Light Mode or Dark Mode?</h1>
+      <div class="answers">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <a>Next</a>
+
+      <svg id="white-transition" width="482" height="258" viewBox="0 0 482 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M99.3355 1.15645C99.3355 1.15645 53.9355 -1.44561 33.8355 1.15645C13.7355 3.7585 10.8877 9.81132 3.73547 22.2585C-4.66932 36.8856 3.73547 65.4565 3.73547 65.4565C7.13547 64.4565 35.9355 42.6564 33.8355 52.4564C29.2355 53.7564 20.8355 57.0564 17.0355 60.0564C10.2355 64.0564 2.93548 70.3565 5.43548 79.1565C7.83548 76.2565 13.3355 69.4565 16.1355 66.7565C18.3355 65.5565 31.7355 53.1564 30.3355 60.2564C23.3355 69.9564 16.4355 81.1565 8.53546 90.0565L18.6355 110.556C26.0355 103.756 33.3355 91.2565 39.8355 83.9565C41.8355 83.4565 49.7355 77.2565 48.6355 82.2565C42.6355 86.2565 36.1355 96.2565 32.0355 101.956C28.6355 105.656 22.4355 113.956 22.0355 119.256L36.6355 149.756C44.4355 141.156 52.5355 121.556 66.3355 123.656C66.3355 125.956 60.6355 128.056 59.1355 128.956L51.6355 136.556C47.5355 142.456 37.0355 153.756 41.8355 161.156C42.2355 156.856 68.7355 127.256 58.1355 144.256C36.1355 169.456 43.9355 161.156 57.5355 188.256C60.8355 179.956 65.6355 170.656 70.2355 162.956C72.4355 161.156 73.6355 162.856 74.9355 164.756C75.3355 169.656 70.7355 176.956 69.3355 181.456C67.4355 184.456 62.5355 192.356 62.0355 195.956C67.9355 204.456 81.0355 220.356 88.3355 227.656C88.8355 220.856 91.1355 207.356 94.0355 201.256C95.2355 199.856 96.6355 190.056 99.2355 193.856C96.6355 203.456 93.4355 219.956 90.9355 229.656L96.6355 237.156C99.0355 229.356 101.735 218.156 103.135 210.056C103.935 207.556 104.035 203.156 105.835 201.056C108.435 199.956 108.435 202.956 108.835 204.656C107.035 216.656 93.5355 240.356 105.535 244.856C139.735 257.956 152.835 257.356 152.835 257.356L481.635 257.356C481.735 243.556 481.735 1.15646 481.735 1.15646L152.935 1.15646C71.4355 1.15645 99.3355 1.15645 99.3355 1.15645Z"
+          fill="#F7F7EB" />
+      </svg>
+      <svg id="green-transition" width="483" height="259" viewBox="0 0 483 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M382.788 256.97C382.788 256.97 428.188 259.572 448.288 256.97C468.388 254.368 471.235 248.315 478.388 235.868C486.792 221.241 478.388 192.67 478.388 192.67C474.988 193.67 446.188 215.47 448.288 205.67C452.888 204.37 461.288 201.07 465.088 198.07C471.888 194.07 479.188 187.77 476.688 178.97C474.288 181.87 468.788 188.67 465.988 191.37C463.788 192.57 450.388 204.97 451.788 197.87C458.788 188.17 465.688 176.97 473.588 168.07L463.488 147.57C456.088 154.37 448.788 166.87 442.288 174.17C440.288 174.67 432.388 180.87 433.488 175.87C439.488 171.87 445.988 161.87 450.088 156.17C453.488 152.47 459.688 144.17 460.088 138.87L445.488 108.37C437.688 116.97 429.588 136.57 415.788 134.47C415.788 132.17 421.488 130.07 422.988 129.17L430.488 121.57C434.588 115.67 445.088 104.37 440.288 96.9702C439.888 101.27 413.388 130.87 423.988 113.87C445.988 88.6702 438.188 96.9702 424.588 69.8702C421.288 78.1702 416.488 87.4702 411.888 95.1702C409.688 96.9702 408.488 95.2702 407.188 93.3702C406.788 88.4702 411.388 81.1702 412.788 76.6702C414.688 73.6702 419.588 65.7702 420.088 62.1702C414.188 53.6702 401.088 37.7702 393.788 30.4702C393.288 37.2702 390.988 50.7702 388.088 56.8702C386.888 58.2702 385.488 68.0702 382.888 64.2702C385.488 54.6702 388.688 38.1702 391.188 28.4702L385.488 20.9702C383.088 28.7702 380.388 39.9702 378.988 48.0702C378.188 50.5702 378.088 54.9702 376.288 57.0702C373.688 58.1702 373.688 55.1702 373.288 53.4702C375.088 41.4702 388.588 17.7702 376.588 13.2702C342.388 0.170233 329.288 0.770219 329.288 0.770219L0.487593 0.770233C0.387593 14.5702 0.387604 256.97 0.387604 256.97L329.188 256.97C410.688 256.97 382.788 256.97 382.788 256.97Z"
+          fill="#213F2B" />
+      </svg>
+
+
+
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="mailto:&#097;&#110;&#116;&#099;&#104;&#111;&#119;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;" class="static">Email</a>
+        <div class="static"></div>
+      </li>
+      <li><a href="https://validator.w3.org/check?uri=referer" class="static">Valid HTML 5</a>
+        <div class="static"></div>
+      </li>
+      <li><a href="https://jigsaw.w3.org/css-validator/check/referer" class="static">Valid CSS</a>
+        <div class="static"></div>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
