@@ -10,6 +10,7 @@
   const q1Section = document.querySelector('#q1');
   const q2Section = document.querySelector('#q2');
   const q3Section = document.querySelector('#q3');
+  const resultSection = document.querySelector('#results');
 
   // FUNCTIONS
 
@@ -226,6 +227,7 @@
 
   const whiteLeaf = document.querySelector('#white-transition');
   const greenLeaf = document.querySelector('#green-transition');
+
   // starts out dark
   q3 = "dark";
 
@@ -258,6 +260,62 @@
 
     progressBar.className = "hidden";
     changeHeaderFooterCol('#EEEED7');
+
+    // lock in results BEFORE results show
+    if (q1=="introverted" & q2=="hiking" & q3=="dark") {
+      nickname.innerHTML = 'Snake Plant';
+      fullname.innerHTML = 'Dracaena trifasciata';
+      image.src = 'images/snake.png';
+    } else if (q1=="introverted" & q2=="hiking" & q3=="light") {
+      nickname.innerHTML = 'Arrowhead Plant';
+      fullname.innerHTML = 'Syngonium podophyllum';
+      image.src = 'images/syngonium.png';
+    } else if (q1=="extroverted" & q2=="hiking" & q3=="dark") {
+      nickname.innerHTML = 'Money Tree';
+      fullname.innerHTML = 'Pachira aquatica';
+      image.src = 'images/money.png';
+    } else if (q1=="extroverted" & q2=="hiking" & q3=="light") {
+      nickname.innerHTML = 'Neon Pothos';
+      fullname.innerHTML = 'Epipremnum aureum';
+      image.src = 'images/pothos.png';
+    } else if (q1=="introverted" & q2=="beach" & q3=="dark") {
+      nickname.innerHTML = 'Zz Plant';
+      fullname.innerHTML = 'Zamioculcas';
+      image.src = 'images/zzplant.png';
+    } else if (q1=="introverted" & q2=="beach" & q3=="light") {
+      nickname.innerHTML = 'Burle Marx Philodendron';
+      fullname.innerHTML = 'Philodendron imbe';
+      image.src = 'images/burle.png';
+    } else if (q1=="extroverted" & q2=="beach" & q3=="dark") {
+      nickname.innerHTML = 'Blushing Philodendron';
+      fullname.innerHTML = 'Philodendron erubescens';
+      image.src = 'images/philo.png';
+    } else {
+      nickname.innerHTML = 'Swiss Cheese Plant';
+      fullname.innerHTML = 'Monstera Deliciosa';
+      image.src = 'images/monstera.png';
+    }
+
+    // show results section
+    setTimeout(()=>{
+      showResults();
+    }, 1000)
+  })
+
+  // SHOWING RESULTS
+  let nickname = document.querySelector('#results span');
+  let fullname = document.querySelector('#results em');
+  const image = document.querySelector('#results img');
+  const restartBtn = document.querySelector('#results a');
+
+  function showResults() {
+    resultSection.className = "revealed";
+  }
+
+  restartBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    location.reload();
   })
 
 

@@ -540,6 +540,65 @@ main #start {
   transition: transform 1.5s ease;
 }
 
+#results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 40;
+
+  transition: visibility 0.5s ease,
+              opacity 0.5s ease;
+}
+#results h2 {
+  font: 400 2em Montserrat, sans-serif;
+  color: #EEEED7;
+  margin: 0;
+}
+
+#results p {
+  font: 300 1.25em Montserrat, sans-serif;
+  color: #EEEED7;
+  margin-top: 0.5em;
+}
+
+#results img {
+  width: auto;
+  height: 40vh;
+}
+
+#results a {
+  font: 1em/45px Merriweather, sans-serif;
+  text-align: center;
+
+  width: 180px;
+  height: 45px;
+  background: #203F2B;
+  border: 1px solid #EEEED7;
+  border-radius: 5px;
+  color: #EEEED7;
+  z-index: 35;
+
+  margin-top: 1em;
+
+  transition: background 0.3s ease,
+              color 0.3s ease;
+}
+
+#results a:hover {
+  background: #EEEED7;
+  color: #203F2B;
+  cursor: pointer;
+}
+
 
 footer {
   display: flex;
