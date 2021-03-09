@@ -226,9 +226,12 @@
 
   const whiteLeaf = document.querySelector('#white-transition');
   const greenLeaf = document.querySelector('#green-transition');
+  // starts out dark
+  q3 = "dark";
 
   toggle.addEventListener('change', function() {
     if (this.checked) {
+      q3 = "light";
       changeHeaderFooterCol('#213F2B');
       q3Section.classList.remove('dark');
       q3Section.classList.add('light');
@@ -236,6 +239,7 @@
       questionTitle.className = 'darkText';
       q3Next.className = 'invertedButton';
     } else {
+      q3 = "dark";
       changeHeaderFooterCol('#EEEED7');
       q3Section.classList.remove('light');
       q3Section.classList.add('dark');
