@@ -593,8 +593,8 @@ main #start {
 
   margin-top: 1em;
 
-  transition: background 0.3s ease,
-              color 0.3s ease;
+  transition: background 0.1s ease,
+              color 0.1s ease;
 }
 
 #results a:hover {
