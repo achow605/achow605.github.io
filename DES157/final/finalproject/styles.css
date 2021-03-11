@@ -75,6 +75,11 @@ header h1:hover {
   cursor: pointer;
 }
 
+header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header div {
   min-width: 24px;
   border-top: 1px solid #E9EAC3;
@@ -511,6 +516,10 @@ main #start {
   color: #203F2B !important;
 }
 
+#modeOptions {
+  height: 60px;
+}
+
 #q3 .invertedButton:hover {
   background: #203F2B !important;
   color: #EEEED7 !important;
@@ -690,4 +699,9 @@ footer a {
 
 .darkText {
   color: #203F2B !important;
+}
+
+.darkmode, .lightmode {
+  margin: 0 0.25em;
+  transition: font-size 0.3s ease;
 }

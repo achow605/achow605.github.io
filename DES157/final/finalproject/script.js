@@ -233,8 +233,12 @@
   const whiteLeaf = document.querySelector('#white-transition');
   const greenLeaf = document.querySelector('#green-transition');
 
+  const darkOption = document.querySelector('.darkmode');
+  const lightOption = document.querySelector('.lightmode');
+
   // starts out dark
   q3 = "dark";
+  darkOption.style.fontSize = '1.5em';
 
   toggle.addEventListener('change', function() {
     if (this.checked) {
@@ -245,6 +249,8 @@
       progressBar.src = 'images/q3-dark.svg';
       questionTitle.className = 'darkText';
       q3Next.className = 'invertedButton';
+      lightOption.style.fontSize = '1.5em';
+      darkOption.style.fontSize = '1em';
     } else {
       q3 = "dark";
       changeHeaderFooterCol('#EEEED7');
@@ -253,6 +259,8 @@
       progressBar.src = 'images/q3.svg';
       questionTitle.className = '';
       q3Next.className = '';
+      darkOption.style.fontSize = '1.5em';
+      lightOption.style.fontSize = '1em';
     }
 
   })
