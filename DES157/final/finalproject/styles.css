@@ -21,6 +21,10 @@
   .mobile {
     display: flex;
   }
+
+  svg, header, main, footer {
+    display: none !important;
+  }
 }
 
 .mobile h1 {
