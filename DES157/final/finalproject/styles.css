@@ -2,6 +2,40 @@
   box-sizing: border-box;
 }
 
+.mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #213F2B;
+  z-index: 9999;
+  color: #E9EAC3;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile {
+    display: flex;
+  }
+}
+
+.mobile h1 {
+  font: 2em/45px Merriweather, sans-serif;
+  width: 60%;
+  text-align: center;
+}
+
+.mobile h2 {
+  font: 1.2em Montserrat, sans-serif;
+  width: 70%;
+  text-align: center;
+  margin-top: 0;
+}
+
 .preload * {
   transition: none !important;
 }
