@@ -1,0 +1,285 @@
+:root {
+    --animation-time: 5s;
+    --top-rand: 20px;
+    --right-rand: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECE5D3;
+    color: #3D3D3D;
+    transition: all 1s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body.switch {
+    background-color: #262626;
+    color: #ECE5D3;
+}
+
+body.switch h1 {
+    text-shadow: rgba(248,255,153,0.8) 0px 0px 10px;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em 2em;
+}
+
+header h1 {
+    font-size: 46px;
+    margin: 12px 0;
+}
+
+header h2 {
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: 48px auto;
+    background-color: #F2EDE4;
+    border: #6d6d6d 2px solid;
+    overflow: hidden;
+
+    background-image: url('./images/chinese-landscape-bg.jpg');
+    background-size: 100%;
+    transition: all 1s;
+}
+
+#banner #banner-img {
+    width: 100%;
+    height: auto;
+}
+
+#boat, #boat-reflection {
+    position: absolute;
+    width: 130px;
+    height: auto;
+    left: 485px;
+}
+
+#boat {
+    top: 190px;
+    z-index: 1;
+}
+
+#boat-reflection {
+    top: 216px;
+}
+
+.float-boat {
+    animation: boat-float infinite 1.5s ease-in-out;
+}
+
+.float-reflection {
+    animation: refl-float infinite 1.5s ease-in-out;
+}
+
+#lantern {
+    width: 5px;
+    height: auto;
+
+    left: 528px;
+    top: 204px;
+
+    box-shadow: 0px 0px 10px 4px rgba(248,255,153,0.8);
+
+    transition: all 1s ease-in-out;
+}
+
+#windows {
+    width: 24px;
+    height: auto;
+
+    left: 209px;
+    top: 68px;
+
+    filter: drop-shadow(0px 0px 8px rgba(248,255,153,0.8));
+
+    transition: all 1s ease-in-out;
+}
+
+@keyframes boat-float {
+    0% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes refl-float {
+    0% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(-1px);
+    }
+}
+
+#banner.switch {
+    background-image: url('./images/chinese-landscape-bg-night.jpg');
+}
+
+#banner.switch {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 1s;
+}
+
+#banner .night {
+    opacity: 0;
+    position: absolute;
+}
+
+#banner.switch .night {
+    opacity: 1;
+}
+
+.flower {
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    background: url('images/flower.svg');
+    z-index: 2;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(0px,0px) rotate(0deg);
+        opacity: 0;
+        display: block;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-1000px, 200px) rotate(-720deg);
+        opacity: 0;
+        display: none;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    width: 25%;
+    border: 1px #6d6d6d solid;
+    background: #F2EDE4;
+    margin: 0 36px;
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'Kalam', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section {
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+section li {
+    padding-left: 1em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: #3D3D3D;
+}
+
+section a:hover {
+    color: #A02736;
+    text-decoration-line: line-through;
+}
+
+section.switch {
+    background-color: #646464;
+}
+
+section.switch a {
+    color: #fff;
+}
+
+section.switch a:hover {
+    color: #e2d737;
+    text-decoration-line: line-through;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background-color: #3d3d3d;
+    color: #F2EDE4;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #6f6f6f;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: rgb(235, 235, 235);
+    color: #3D3D3D;
+    border-color: #333;
+}
+
+button.switch:hover {
+    background-color: #d1d1d1;
+}
