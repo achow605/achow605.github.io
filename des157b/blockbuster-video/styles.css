@@ -35,7 +35,7 @@ h1 {
 }
 
 h1:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
     color:rgb(90, 189, 76);
 }
 
