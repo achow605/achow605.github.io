@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Suez+One&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="videos/IMG_0779.mp4" as="video" type="video/mp4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Blockbuster Video</title>
+</head>
+<body>
+    <video id="myVideo" loop autoplay muted plays-inline>
+        <source src="videos/IMG_0779.webm" type="video/webm">
+        <source src="videos/IMG_0779.mp4" type="video/mp4">
+        <p>Your browser does not support mp4 video. Click <a href="videos/IMG_0779.mp4">here</a> instead.</p>
+    </video>
+
+    <i class="fab fa-pagelines"></i>
+
+    <section>
+        <h2><span id="lose" class="ul hidden">Lose</span> <span id="yourself" class="hidden">yourself</span> <span id="in" class="hidden">in</span></h2>
+        <h1 id="nature" class="hidden">NATURE</h1>
+        <h2><span id="and" class="hidden">and</span> <span class="ul hidden" id="find">find</span></h2>
+        <h1 id="peace" class="hidden">PEACE</h1>
+        <h3 id="source" class="hidden">&mdash; Ralph Waldo Emerson</h3>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
