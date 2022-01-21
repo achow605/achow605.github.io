@@ -1,0 +1,62 @@
+{
+    "point1" : {
+        "time": "15",
+        "bpm": "72",
+        "speed": 1
+    },
+
+    "point2" : {
+        "time": "30",
+        "bpm": "84",
+        "speed": 2
+    },
+
+    "point3" : {
+        "time": "45",
+        "bpm": "89",
+        "speed": 2
+    },
+
+    "point4" : {
+        "time": "60",
+        "bpm": "90",
+        "speed": 3
+    },
+
+    "point5" : {
+        "time": "75",
+        "bpm": "96",
+        "speed": 3
+    },
+
+    "point6" : {
+        "time": "90",
+        "bpm": "112",
+        "speed": 4
+    },
+
+    "point7" : {
+        "time": "105",
+        "bpm": "107",
+        "speed": 4
+    },
+
+    "point8" : {
+        "time": "120",
+        "bpm": "98",
+        "speed": 3
+    },
+
+    "point9" : {
+        "time": "135",
+        "bpm": "98",
+        "speed": 3
+    },
+
+    "point10" : {
+        "time": "150",
+        "bpm": "96",
+        "speed": 3
+    }
+
+}
