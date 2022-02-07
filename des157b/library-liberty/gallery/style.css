@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF9F6;
+    font-family: 'Crimson Pro', serif;
+    color: #343434;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 120px;
+    position: fixed;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    background: linear-gradient(180deg, #FAF9F6 75%, #faf9f600 100%);
+    z-index: 2;
+}
+
+header span {
+    font-size: 48px;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+}
+
+#right {
+    width: 70%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13% 0;
+}
+
+#back {
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 50%;
+}
+
+#back a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+}
+
+#age-input {
+    display: flex;
+    align-items: center;
+    ;
+}
+
+#age-input h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+#age-input input {
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.card-bg {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 50px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card-bg:last-child {
+    box-sizing: content-box;
+    margin-bottom: 200px;
+}
+
+.card-container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.card {
+    word-break: break-word;
+    word-wrap: normal;
+    text-align: center;
+}
