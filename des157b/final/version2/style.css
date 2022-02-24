@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBE9E5;
+    display: flex;
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+}
+
+#left-section {
+    background-color: white;
+    width: 40%;
+    height: 100vh;
+    box-shadow: 4px 0px 25px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-section .logo {
+    position: absolute;
+    top: 48px;
+    /* left: 48px; */
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#left-section .logo span {
+    font-size: 1.5em;
+    color: #736C00;
+}
+
+#left-section #main {
+    width: 60%;
+}
+
+#left-section #main #prompt-container {
+    font-weight: 500;
+    font-size: 2vw;
+    color: #736C00;
+    height: 5vw;
+}
+
+#left-section #main p {
+    margin-bottom: 36px;
+    font-size: 18px;
+}
+
+#left-section #main button {
+    margin-right: 48px;
+    padding: 12px;
+    height: max-content;
+    font-family: "crimson pro", serif;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+#left-section #main button:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+#left-section #main #buttons {
+    display: flex;
+}
+
+#left-section #main .dropbtn {
+    padding: 11px 12px;
+    width: 132px;
+    font-family: "crimson pro", serif;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+
+#left-section #main .dropdown:hover .dropbtn {
+    background-color: rgb(231, 231, 231);
+}
+
+#left-section #main .dropdown .dropbtn i {
+    position: absolute;
+    right: 12px;
+    transform: translateY(3px);
+    font-size: 12px;
+}
+
+.dropdown-content div {
+    width: 132px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    text-align: center;
+    padding: 11px 12px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.dropdown-content div:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#left-section #main .dropdown .dropdown-content {
+    position: absolute;
+    display: none;
+    max-height: 163.12px;
+    overflow: auto;
+}
+
+#left-section #main .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* width */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+/* Track */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#right-section {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards1 {
+    width: 1000px;
+}
+
+.card-bg {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 36px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 24px;
+}
+
+.card-bg footer {
+    margin-left: 12px;
+    font-size: 24px;
+}
+
+
+/* .card-bg:last-child {
+    box-sizing: content-box;
+    margin-bottom: 200px;
+} */
+
+.card-bg:nth-child(even) {
+    transform: translate(482px, -242px);
+    position: absolute;
+}
+
+.card-container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.card {
+    word-break: break-word;
+    word-wrap: normal;
+    text-align: center;
+}
+
+#write-screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+#write-screen #write-card {
+    background-color: white;
+    padding: 32px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#write-screen #write-card form {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+}
+
+#write-screen .close-btn {
+    width: max-content;
+    font-size: 18px;
+    transition: border 0.2s;
+    border-bottom: 1px solid white;
+}
+
+#write-screen .close-btn:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#write-screen .close-btn i {
+    transform: translateY(2px);
+}
+
+#write-card input {
+    margin: 8px 0 18px 0;
+    height: 36px;
+}
+
+#write-card #response-s {
+    margin-bottom: 8px;
+}
+
+#write-card textarea {
+    font-family: 'Crimson Pro', serif;
+    padding: 4px;
+    font-size: 16px;
+}
+
+#write-card #submit {
+    width: 120px;
+    margin: 24px auto 0 auto;
+    background-color: #736C00;
+    color: white;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: "Crimson Pro", serif;
+    font-size: 16px;
+    text-align: center;
+    user-select: none;
+}
+
+.close-btn {
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.close-btn p {
+    margin: 0;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
