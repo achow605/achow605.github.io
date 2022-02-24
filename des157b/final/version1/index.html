@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Then&Now</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <section id="left-section">
+        <div class="logo">
+            Then<span>&</span>Now
+        </div>
+
+        <div id="main">
+            <div id="prompt">
+                <h1>What advice would you give yourself from a year ago?</h1>
+            </div>
+            <div id="prompt-container"><span id="typed"></span></div>
+
+            <p>Then&Now is a tool for introspection and growth based on each of our unique experiences. Share some advice and see what other's have shared for when they were your age.</p>
+
+            <div>
+                <button id="write">Write a response</button>
+                <select name="ages" id="ages">
+                    <option value="10-15">Ages 10-15</option>
+                    <option value="16-20">Ages 16-20</option>
+                    <option value="21-25">Ages 21-25</option>
+                    <option value="26-30">Ages 26-30</option>
+                </select>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="right-section">
+        <div id="cards">
+
+        </div>
+    </section>
+
+    <div id="write-screen" class="hidden">
+        <div id="write-card">
+            <div class="close-btn">
+                <p><i class="fa-solid fa-xmark"></i> close</p>
+            </div>
+            <form>
+                <label for="fname" class="label">First Name (Optional)</label>
+                <input type="text" id="fname" name="fname">
+
+                <label for="age">Your Age</label>
+                <input type="text" id="age" name="age">
+
+                <label for="response">What advice would you give yourself from five years ago?</label>
+                <input type="text" id="response-s" name="response-s" placeholder="Short Response">
+                <textarea name="response-l" id="response-l" rows="10" placeholder="Long Response (Optional)"></textarea>
+
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
