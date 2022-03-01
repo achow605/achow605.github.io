@@ -370,7 +370,8 @@ body {
     margin: 0;
 }
 
-.spotlight {
+
+/* .spotlight {
     position: fixed;
     top: 0;
     left: 0;
@@ -379,6 +380,31 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 1s;
     z-index: 1;
+} */
+
+.fa-down-long {
+    position: fixed;
+    bottom: 32px;
+    right: 29.4%;
+    font-size: 36px;
+    animation: scroll 1.5s infinite ease-out;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: .3;
+    }
+    80% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .visible {
