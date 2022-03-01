@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
@@ -50,6 +52,7 @@
     </section>
 
     <section id="right-section">
+        <div class="spotlight hidden"></div>
         <div id="cards1">
 
         </div>
@@ -76,6 +79,15 @@
 
                 <input type="submit" id="submit" value="Submit">
             </form>
+        </div>
+    </div>
+
+    <div id="card-screen" class="hidden">
+        <div id="full-card">
+            <!-- <div class="theCard close-btn">
+                <p><i class="fa-solid fa-xmark"></i> close</p>
+            </div> -->
+            <div id="full-card-content"></div>
         </div>
     </div>
 
