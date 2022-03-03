@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBE9E5;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+    overflow-x: hidden;
+}
+
+#left-section {
+    background-color: white;
+    width: 40%;
+    height: 100vh;
+    box-shadow: 4px 0px 25px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-section .logo {
+    position: absolute;
+    top: 48px;
+    /* left: 48px; */
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#left-section .logo span {
+    font-size: 1.5em;
+    color: #736C00;
+}
+
+#left-section #main {
+    width: 60%;
+}
+
+#left-section #main #prompt-container {
+    font-weight: 500;
+    font-size: 1.8vw;
+    color: #736C00;
+    height: 4.5vw;
+}
+
+#left-section #main p {
+    margin-bottom: 36px;
+    font-size: 18px;
+}
+
+#left-section #main button {
+    margin-right: 48px;
+    padding: 12px;
+    height: max-content;
+    font-family: "crimson pro", serif;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+#left-section #main button:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+#left-section #main #buttons {
+    display: flex;
+}
+
+#left-section #main .dropbtn {
+    padding: 11px 12px;
+    width: 132px;
+    font-family: "crimson pro", serif;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+
+#left-section #main .dropdown:hover .dropbtn {
+    background-color: rgb(231, 231, 231);
+}
+
+#left-section #main .dropdown .dropbtn i {
+    position: absolute;
+    right: 12px;
+    transform: translateY(3px);
+    font-size: 12px;
+}
+
+.dropdown-content div {
+    width: 132px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    text-align: center;
+    padding: 11px 12px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.dropdown-content div:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#left-section #main .dropdown .dropdown-content {
+    position: absolute;
+    display: none;
+    max-height: 163.12px;
+    overflow: auto;
+}
+
+#left-section #main .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* width */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+/* Track */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+#left-section #main .dropdown:hover .dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#right-section {
+    width: 60%;
+    margin-left: auto;
+    /* padding-left: 32px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards1 {
+    width: calc(400px + 400px + 36px + 36px + 36px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-device-width: 1500px) {
+    #cards1 {
+        width: auto;
+    }
+}
+
+.card-bg {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 36px;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 24px;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.card-bg footer {
+    margin-left: 12px;
+    font-size: 24px;
+}
+
+.card-bg footer span {
+    font-size: 26px;
+    font-weight: 500;
+    color: #736C00;
+}
+
+
+/* .card-bg:last-child {
+    box-sizing: content-box;
+    margin-bottom: 200px;
+} */
+
+@media (min-device-width: 1500px) {
+    .card-bg:nth-child(even) {
+        width: inherit;
+        transform: translate(432px, -218px) !important;
+        position: absolute;
+    }
+}
+
+.card-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.card {
+    word-break: break-word;
+    word-wrap: normal;
+    text-align: left;
+    margin-left: 12px;
+}
+
+#card-screen,
+#write-screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+#card-screen #full-card {
+    background-color: white;
+    padding: 32px;
+    width: 550px;
+    min-height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#card-screen #full-card::after {
+    position: absolute;
+    bottom: -42px;
+    left: 124px;
+    content: 'Click anywhere outside to close';
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#card-screen #full-card #full-card-content h1 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#card-screen #full-card #full-card-content p {
+    font-size: 21px;
+}
+
+#card-screen #full-card #full-card-content footer {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#card-screen #full-card #full-card-content footer span {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+#card-screen #full-card #full-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#write-screen #write-card {
+    background-color: white;
+    padding: 32px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#write-screen #write-card form {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+}
+
+#write-screen .close-btn {
+    width: max-content;
+    font-size: 18px;
+    transition: border 0.2s;
+    border-bottom: 1px solid white;
+}
+
+#write-screen .close-btn:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.close-btn i {
+    transform: translateY(2px);
+}
+
+#write-card input {
+    font-family: 'Crimson Pro', serif;
+    font-size: 16px;
+    margin: 8px 0 18px 0;
+    height: 36px;
+}
+
+#write-card #response-s {
+    margin-bottom: 8px;
+}
+
+#write-card textarea {
+    font-family: 'Crimson Pro', serif;
+    padding: 4px;
+    font-size: 16px;
+}
+
+#write-card #submit {
+    width: 120px;
+    margin: 24px auto 0 auto;
+    background-color: #736C00;
+    color: white;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: "Crimson Pro", serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-btn {
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.close-btn p {
+    margin: 0;
+}
+
+
+/* .spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    z-index: 1;
+} */
+
+.fa-down-long {
+    position: fixed;
+    bottom: 32px;
+    right: 29.4%;
+    font-size: 36px;
+    animation: scroll 1.5s infinite ease-out;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: .3;
+    }
+    80% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
