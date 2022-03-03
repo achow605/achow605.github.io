@@ -15,6 +15,9 @@
      const cardsContainer = document.querySelector('#cards1');
 
      // Initial Function Calls ###########################################################################
+
+     alert('You stumble upon this website and are curious about what advice people would give to you that are a bit older than you. You want to see what people who are 1 to 2 years older than you are saying. After reading what they have said, you want to write some advice of your own to your younger self.');
+
      initTypeHeader();
 
      AOS.init();
@@ -44,6 +47,7 @@
      form.addEventListener('submit', function(e) {
          e.preventDefault();
          saveNewCard(this.elements.shortResponse.value, this.elements.longResponse.value, this.elements.fname.value, this.elements.age.value);
+
      })
 
      //// Close card back overlay on outside click
