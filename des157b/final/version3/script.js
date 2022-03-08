@@ -46,14 +46,6 @@
 
      })
 
-     //// Close card back overlay on outside click
-     //  cardScreen.addEventListener('click', function(e) {
-     //      if (e.target == this) {
-     //          cardScreen.className = 'hidden';
-     //      }
-     //  })
-
-
      //// Close card overlay on close btn click
      cardCloseBtn.addEventListener('click', function() {
          cardScreen.className = 'hidden';
@@ -108,7 +100,10 @@
      function initTypeHeader() {
          var options = {
              stringsElement: '#prompt',
-             typeSpeed: 35
+             typeSpeed: 35,
+             onComplete: function(self) {
+                 document.querySelector('.typed-cursor').style.display = 'none';
+             }
          };
 
          var typed = new Typed('#typed', options);
