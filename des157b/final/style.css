@@ -83,7 +83,7 @@ body {
     position: relative;
 }
 
-@media (max-device-width: 1500px) {
+@media (max-width: 1500px) {
     #left-section #main button {
         font-size: 14px;
     }
@@ -173,7 +173,7 @@ body {
     margin-right: auto;
 }
 
-@media (max-device-width: 1500px) {
+@media (max-width: 1500px) {
     #cards1 {
         width: 700px;
     }
@@ -216,7 +216,7 @@ body {
     margin-bottom: 200px;
 } */
 
-@media (min-device-width: 1500px) {
+@media (min-width: 1500px) {
     .card-bg:nth-child(even) {
         width: inherit;
         transform: translate(432px, -218px) !important;
@@ -224,7 +224,7 @@ body {
     }
 }
 
-@media (max-device-width: 1499px) {
+@media (max-width: 1499px) {
     .card-bg {
         width: 300px;
     }
